@@ -14,7 +14,7 @@ The crucial element of the session is that everyone has a chance to **have-a-go*
 
 ## have-a-go process 🧰
 
-So you've decided to have-a-go! The process is a 5 steper:
+So you've decided to have-a-go! The process is a 6 step-er:
 
 1. Decide on what you're keen to learn. Take a look at the existing tutorials to get some inspiration on what's out there. 
 2. [Sign up for a session](https://docs.google.com/document/d/1XoNQ9gSZ0xi8KM1DQVYtGe874cDet4iHUcU0w6wCvTI/edit?usp=gmail_thread) to recap on what you've learnt.   
