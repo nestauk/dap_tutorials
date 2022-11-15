@@ -1,0 +1,6 @@
+pandas
+altair
+altair-saver
+selenium==4.2.0
+webdriver-manager
+vega_datasets

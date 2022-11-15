@@ -1,0 +1,264 @@
+track_name,artist_name,artist_pop,album,track_pop,danceability,energy,loudness,mode,key,speechiness,acousticness,instrumentalness,liveness,valence,tempo,time_signature,duration_ms
+Running Up That Hill (A Deal With God),Kate Bush,81,Hounds Of Love,95,0.629,0.547,-13.123,0,10,0.055,0.72,0.00314,0.0604,0.197,108.375,4,298933
+As It Was,Harry Styles,91,As It Was,96,0.52,0.731,-5.338,0,6,0.0557,0.342,0.00101,0.311,0.662,173.93,4,167303
+Sunroof,Nicky Youre,73,Sunroof,44,0.768,0.716,-5.11,1,10,0.0404,0.35,0,0.15,0.841,131.43,4,163026
+Heat Waves,Glass Animals,80,Dreamland (+ Bonus Levels),89,0.761,0.525,-6.9,1,11,0.0944,0.44,6.7e-06,0.0921,0.531,80.87,4,238805
+About Damn Time,Lizzo,81,About Damn Time,92,0.836,0.743,-6.305,0,10,0.0656,0.0995,0,0.335,0.722,108.966,4,191822
+Glimpse of Us,Joji,85,Glimpse of Us,97,0.44,0.317,-9.258,1,8,0.0531,0.891,4.78e-06,0.141,0.268,169.914,3,233456
+Bad Habit,Steve Lacy,83,Gemini Rights,86,0.686,0.494,-7.093,1,1,0.0355,0.613,5.8e-05,0.402,0.7,168.946,4,232067
+STAY (with Justin Bieber),The Kid LAROI,83,STAY (with Justin Bieber),89,0.591,0.764,-5.484,1,1,0.0483,0.0383,0,0.103,0.478,169.928,4,141806
+Enemy (with JID) - from the series Arcane League of Legends,Imagine Dragons,88,Enemy (with JID) [from the series Arcane League of Legends],87,0.728,0.783,-4.424,0,11,0.266,0.237,0,0.434,0.555,77.011,4,173381
+First Class,Jack Harlow,84,First Class,89,0.905,0.563,-6.135,1,8,0.102,0.0254,9.71e-06,0.113,0.324,106.998,4,173948
+Afraid To Feel,LF SYSTEM,68,Afraid To Feel,86,0.578,0.912,-3.929,1,1,0.114,0.0166,0.00362,0.273,0.68,127.87,4,177525
+Betty (Get Money),Yung Gravy,75,Betty (Get Money),87,0.723,0.772,-6.784,1,1,0.0792,0.00524,1.15e-05,0.367,0.58,102.004,4,146471
+abcdefu,GAYLE,71,abcdefu,87,0.695,0.54,-5.692,1,4,0.0493,0.299,0,0.367,0.415,121.932,4,168602
+Being Good Is Boring,Jena Rose,40,Being Good Is Boring,55,0.767,0.758,-3.191,0,11,0.084,0.0368,0,0.0682,0.844,111.986,4,160982
+MIDDLE OF THE NIGHT,Elley Duhé,75,MIDDLE OF THE NIGHT,91,0.41,0.611,-8.271,0,4,0.0467,0.0228,0,0.116,0.0899,185.727,3,184448
+Envolver,Anitta,80,Envolver,86,0.812,0.736,-5.421,0,4,0.0833,0.152,0.00254,0.0914,0.396,91.993,4,193806
+AMG,Jt5k,36,AMG,0,0.802,0.509,-6.889,0,10,0.181,0.0283,0,0.307,0.0567,87.849,4,135000
+SNAP,Rosa Linn,74,SNAP,89,0.563,0.639,-8.205,1,0,0.0684,0.107,1.06e-05,0.446,0.518,169.985,4,179551
+Baby Girl,Disco Lines,59,Baby Girl,76,0.73,0.907,-3.72,1,2,0.0606,0.0921,0.114,0.23,0.249,120.968,4,111074
+Flex On My Ex (with Bankrol Hayden),KillBunk,60,Flex On My Ex (with Bankrol Hayden),57,0.619,0.707,-8.033,1,1,0.099,0.00601,0,0.0946,0.365,85.285,5,166805
+House of Memories,Panic! At The Disco,78,Death of a Bachelor,86,0.506,0.817,-5.051,0,11,0.0335,0.00272,0,0.0486,0.506,109.952,4,208707
+The Plan,Arman Aydin,64,The Plan,58,0.812,0.653,-5.849,0,5,0.0361,0.0059,0,0.105,0.864,124.034,4,135484
+Thousand Miles,The Kid LAROI,83,Thousand Miles,84,0.376,0.657,-4.658,1,7,0.0768,0.0858,0,0.0884,0.203,80.565,4,164782
+INDUSTRY BABY (feat. Jack Harlow),Lil Nas X,81,INDUSTRY BABY (feat. Jack Harlow),86,0.736,0.704,-7.409,0,3,0.0615,0.0203,0,0.0501,0.894,149.995,4,212000
+Until I Found You,Stephen Sanchez,74,Until I Found You,90,0.539,0.508,-6.05,1,10,0.0288,0.727,0,0.174,0.227,101.358,3,177720
+Oh No,Kreepa,41,Cold As Ice,58,0.541,0.527,-7.438,0,11,0.147,0.00279,0.000509,0.286,0.429,176.123,4,166504
+Cooped Up (with Roddy Ricch),Post Malone,89,Cooped Up,83,0.669,0.773,-5.619,1,0,0.153,0.038,0,0.113,0.377,93.923,4,185857
+TO THE MOON,Jnr Choi,63,TO THE MOON,79,0.745,0.65,-11.814,1,2,0.346,0.0451,0.00758,0.111,0.386,144.047,4,152137
+Dreamer,Astelle,32,Dreamer,42,0.744,0.848,-5.073,0,9,0.0993,0.0811,1.12e-05,0.0889,0.823,150.056,4,178913
+Left and Right (Charlie Puth) [feat. Jung Kook of BTS] - Sped Up Version,sped up nightcore,63,Left and Right (Charlie Puth) [feat. Jung Kook of BTS] [Sped Up Version],58,0.827,0.456,-9.246,1,5,0.0942,0.622,9.79e-05,0.109,0.689,114.269,4,135978
+Pepas,YES YES,54,Pepas,58,0.691,0.823,-4.974,1,7,0.0626,0.0235,0,0.0781,0.149,125.973,4,134330
+Bam Bam (feat. Ed Sheeran),Camila Cabello,82,Familia,83,0.756,0.697,-6.377,1,8,0.0401,0.182,0,0.333,0.956,94.996,4,206071
+Fever - Remix,XY&O,31,Fever (Remix),0,0.782,0.586,-6.067,0,10,0.0567,0.0608,0.00409,0.115,0.724,120.018,4,156000
+On My Way!,P.S.,39,On My Way!,54,0.797,0.666,-6.588,0,0,0.0363,0.167,0.000131,0.104,0.855,119.021,4,177080
+Another Love,Tom Odell,74,Long Way Down (Deluxe),89,0.445,0.537,-8.532,0,4,0.04,0.695,1.65e-05,0.0944,0.131,122.769,4,244360
+Frozen,Madonna,77,Frozen,76,0.706,0.633,-9.584,1,1,0.0419,0.267,0.0192,0.175,0.375,110.005,4,120157
+Riptide,Viva La Panda,56,Riptide,51,0.621,0.847,-6.108,1,3,0.278,0.0584,1.11e-06,0.109,0.373,101.996,4,172431
+Down Under (feat. Colin Hay),Luude,68,Down Under (feat. Colin Hay),72,0.308,0.861,-4.112,0,11,0.172,0.012,0.00103,0.277,0.0386,171.966,4,158774
+Meet Me At Our Spot,THE ANXIETY,65,THE ANXIETY,81,0.773,0.47,-7.93,1,2,0.0299,0.0153,0.000193,0.0851,0.399,94.995,4,162680
+When You're Gone,Paradigm,62,When You're Gone,53,0.783,0.753,-5.003,1,11,0.325,0.0117,0,0.139,0.663,124.036,4,145161
+That Bxtch,Taylor Watson,29,That Bxtch,47,0.645,0.681,-5.961,1,4,0.139,0.037,0,0.0783,0.458,163.87,4,142644
+Long Road,HotBlock Jmoe,34,Long Road,52,0.738,0.685,-8.113,0,10,0.409,0.135,0,0.4,0.663,162.039,4,204000
+Without You,John De Sohn,61,Without You,0,0.643,0.745,-5.554,0,5,0.0619,0.0449,0,0.0916,0.461,124.968,4,182613
+Light Switch,Charlie Puth,83,Light Switch (Instrumental),79,0.69,0.626,-5.693,1,6,0.306,0.105,0.000335,0.0881,0.912,184.009,4,185681
+I Wanna Know,Alex Alexander,46,I Wanna Know,52,0.772,0.754,-4.57,0,9,0.05,0.348,0.397,0.0784,0.88,112.043,4,149787
+"1, 2, 3 (feat. Jason Derulo & De La Ghetto)",Sofía Reyes,72,"1, 2, 3 (feat. Jason Derulo & De La Ghetto)",82,0.792,0.895,-3.112,0,1,0.0589,0.165,0,0.0501,0.794,94.968,4,201526
+credit union,Kinrose,41,credit union,32,0.776,0.656,-8.921,0,4,0.13,0.329,0,0.119,0.649,148.95,4,183465
+love nwantiti (ah ah ah),CKay,73,CKay The First,84,0.727,0.739,-3.805,1,8,0.0411,0.365,0.00137,0.161,0.533,93.005,4,145800
+Bad Habits,Ed Sheeran,90,Bad Habits,22,0.808,0.897,-3.712,0,11,0.0348,0.0469,3.14e-05,0.364,0.591,126.026,4,231041
+Leap of Faith,Alex Alexander,46,Leap of Faith,51,0.557,0.802,-4.429,1,0,0.0541,0.00924,0.000708,0.569,0.778,169.893,4,191080
+Ocean Eyes,Farux,45,Ocean Eyes,42,0.729,0.763,-7.677,1,6,0.0345,0.668,0.0264,0.147,0.113,125.989,4,137029
+Chaa Chaa Chaa (feat. HoodCelebrityy),Girll Codee,29,Chaa Chaa Chaa (feat. HoodCelebrityy),45,0.808,0.592,-6.382,1,2,0.415,0.431,0,0.426,0.628,139.925,4,185376
+Late Night Talking,Harry Styles,91,Harry's House,93,0.714,0.728,-4.595,1,10,0.0468,0.298,0,0.106,0.901,114.996,4,177955
+Moi... Lolita,Monaldin,47,Moi... Lolita,49,0.796,0.66,-6.695,0,4,0.0505,0.0531,2.73e-05,0.319,0.735,109.92,4,158312
+Warning / Signs,Matvey Emerson,51,Warning / Signs,46,0.712,0.829,-8.167,0,0,0.03,0.0891,0.0279,0.168,0.541,121.976,4,155410
+Serenity,Shab,37,Serenity,46,0.688,0.595,-8.094,0,8,0.0508,0.0515,2.7e-06,0.0853,0.312,117.979,4,202507
+MAMIII,Becky G,81,MAMIII,87,0.843,0.7,-3.563,0,4,0.0803,0.0934,0,0.14,0.899,93.991,4,226088
+Running To You (feat. Caden),VINAI,64,Running To You (feat. Caden),65,0.579,0.727,-5.149,0,11,0.0399,0.0321,0,0.714,0.246,124.09,4,183091
+Good Morning,P.S.,39,Good Morning,50,0.732,0.511,-5.101,1,11,0.0413,0.15,8.92e-06,0.059,0.691,171.907,4,161423
+MONTERO (Call Me By Your Name),Lil Nas X,81,MONTERO (Call Me By Your Name),4,0.61,0.508,-6.682,0,8,0.152,0.297,0,0.384,0.758,178.818,4,137876
+Tainted Love,Thatsimo,44,Tainted Love,47,0.646,0.765,-7.586,0,6,0.0448,0.0437,0.000141,0.159,0.362,126.024,4,146667
+Build a Bitch,Bella Poarch,65,Build a Bitch,76,0.855,0.463,-7.454,1,3,0.0367,0.217,1.77e-05,0.347,0.866,102.931,4,122773
+SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy),Amaarae,64,SAD GIRLZ LUV MONEY Remix (feat. Kali Uchis and Moliy),80,0.87,0.523,-8.052,0,1,0.0602,0.433,2.07e-05,0.113,0.319,110.02,4,204764
+Can't Get You Out of My Head,loafers,48,Can't Get You Out of My Head,52,0.642,0.61,-9.194,0,2,0.0992,0.16,6.89e-06,0.408,0.294,129.886,3,168000
+THATS WHAT I WANT,Lil Nas X,81,MONTERO,88,0.737,0.846,-4.51,0,1,0.22,0.00614,0,0.0486,0.546,87.981,4,143901
+We Know,JAM & Philly,21,We Know,39,0.871,0.819,-6.022,0,4,0.256,0.142,0,0.106,0.712,112.114,4,198982
+Cold Heart - PNAU Remix,Elton John,82,The Lockdown Sessions,73,0.795,0.8,-6.32,1,1,0.0309,0.0354,7.25e-05,0.0915,0.934,116.032,4,202735
+Jiggle Jiggle,Duke & Jones,64,Jiggle Jiggle,81,0.864,0.412,-5.886,1,1,0.273,0.458,0.00087,0.124,0.654,99.992,4,97209
+Lost,Frank Ocean,82,channel ORANGE,0,0.912,0.594,-4.894,0,10,0.226,0.0319,0.00122,0.123,0.514,123.07,4,234093
+Would I Lie to You,MISERO,40,Would I Lie to You,51,0.796,0.731,-7.725,0,7,0.0669,0.529,0.239,0.143,0.498,120.067,4,174000
+Crazy,Alex D'Rosso,56,Crazy,53,0.681,0.865,-4.542,0,11,0.198,0.282,0.000169,0.33,0.494,123.056,4,148293
+Life Goes On,Oliver Tree,70,"Ugly is Beautiful: Shorter, Thicker & Uglier (Deluxe)",80,0.7,0.49,-5.187,1,0,0.076,0.186,0,0.117,0.569,79.982,4,161803
+Dinero,Trinidad Cardona,63,Dinero,73,0.708,0.782,-4.687,1,2,0.0674,0.00772,0,0.107,0.484,119.997,4,160880
+Pieces,Nippandab,40,Pieces,42,0.698,0.78,-6.251,1,6,0.0626,0.157,0.0325,0.309,0.203,122.076,4,177956
+Pope Is a Rockstar,SALES,61,SALES LP,74,0.725,0.446,-8.958,0,4,0.0287,0.85,0.243,0.107,0.311,90.024,4,187333
+Looking for Love,Asketa & Natan Chaim,42,Looking for Love,0,0.748,0.894,-4.677,1,7,0.0998,0.311,2.9e-05,0.239,0.503,120.004,4,148000
+edamame (feat. Rich Brian),bbno$,72,edamame (feat. Rich Brian),77,0.815,0.848,-4.704,0,4,0.115,0.023,0.000162,0.0265,0.684,106.032,4,133707
+I Hate U,SZA,82,I Hate U,79,0.535,0.388,-9.805,0,7,0.155,0.507,0,0.11,0.412,106.703,5,174000
+She Wolf (Falling to Pieces),YES YES,54,She Wolf (Falling to Pieces),0,0.592,0.719,-5.044,1,2,0.0452,0.00858,0,0.635,0.169,125.03,4,171028
+Memories,Coopex,60,Memories,64,0.745,0.862,-4.18,1,8,0.116,0.335,0.000623,0.102,0.738,123.979,4,138453
+Ameno Amapiano Remix (You Wanna Bamba),Goya Menor,52,Ameno Amapiano Remix (You Wanna Bamba),68,0.807,0.898,-5.837,0,6,0.0393,0.188,0.000395,0.0824,0.743,112.998,4,227101
+Say My Name,Why Not,36,Say My Name,54,0.773,0.74,-5.052,0,5,0.0315,0.00779,2.48e-05,0.15,0.659,125.981,4,160026
+Woman,Doja Cat,88,Planet Her,89,0.824,0.764,-4.175,0,5,0.0854,0.0888,0.00294,0.117,0.881,107.998,4,172627
+Leave The Door Open,Bruno Mars,86,Leave The Door Open,31,0.586,0.616,-7.964,1,5,0.0324,0.182,0,0.0927,0.719,148.088,4,242096
+I AM WOMAN,Emmy Meli,59,I AM WOMAN,76,0.646,0.471,-9.247,1,10,0.157,0.122,0,0.125,0.455,170.084,4,232813
+Paint It Black,Dame Dame,48,Paint It Black,56,0.69,0.741,-7.405,1,7,0.0363,0.0433,0.00429,0.0975,0.0774,125.985,4,146190
+Vacation,Dirty Heads,65,Vacation,67,0.736,0.751,-5.588,1,8,0.034,0.0381,0,0.105,0.839,150.064,4,209722
+Free Falling Love,Lucas Estrada,63,Free Falling Love,58,0.771,0.932,-3.727,0,7,0.0424,0.311,0.000158,0.116,0.139,120.012,4,155000
+Ocean Drive,Harddope,49,Ocean Drive,51,0.645,0.868,-6.861,0,8,0.0828,0.0661,0.00471,0.241,0.51,120.009,4,197000
+Kiss Me More (feat. SZA),Doja Cat,88,Kiss Me More (feat. SZA),82,0.762,0.701,-3.541,1,8,0.0286,0.235,0.000158,0.123,0.742,110.968,4,208867
+Beggin',Måneskin,78,Chosen,86,0.714,0.8,-4.808,0,11,0.0504,0.127,0,0.359,0.589,134.002,4,211560
+The Hills,Farux,45,The Hills,48,0.656,0.778,-6.838,1,8,0.265,0.4,0,0.533,0.736,125.916,4,129717
+Young Folks,Jungle Jonsson,40,Young Folks,48,0.75,0.731,-7.367,0,5,0.0379,0.068,3.63e-05,0.184,0.335,134.977,4,174222
+good 4 u,Olivia Rodrigo,85,SOUR,88,0.563,0.664,-5.044,1,9,0.154,0.335,0,0.0849,0.688,166.928,4,178147
+Complicated,Nito-Onna,61,Complicated,52,0.724,0.692,-4.997,1,5,0.109,0.074,0,0.0937,0.419,134.088,4,152126
+Jalebi Baby (Tesher x Jason Derulo),Tesher,61,Jalebi Baby (Tesher x Jason Derulo),73,0.691,0.829,-7.179,1,0,0.0412,0.0289,0,0.254,0.866,93.059,4,169154
+You Don't Know Me,Dame Dame,48,You Don't Know Me,49,0.701,0.836,-6.521,1,9,0.275,0.0304,0.000143,0.635,0.373,124.953,4,157320
+Talking to the Moon,Bruno Mars,86,Doo-Wops & Hooligans,76,0.498,0.59,-4.721,0,1,0.032,0.511,0,0.107,0.0784,145.867,4,217867
+Say It Right,MØRFI,39,Say It Right,50,0.764,0.793,-6.506,0,5,0.0709,0.0132,0.00098,0.319,0.127,124.084,4,129677
+Astronaut In The Ocean,Masked Wolf,68,Astronaut In The Ocean,79,0.778,0.695,-6.865,0,4,0.0913,0.175,0,0.15,0.472,149.996,4,132780
+Creep,Naeleck,61,Creep,65,0.615,0.829,-4.567,1,6,0.0421,0.0555,0.00156,0.426,0.0754,124.013,4,203226
+Counting Stars,Farux,45,Counting Stars,54,0.659,0.721,-6.877,1,7,0.264,0.501,0,0.109,0.454,124.791,4,144935
+Buss It,Erica Banks,54,Buss It,0,0.918,0.434,-9.541,1,9,0.173,0.569,3.14e-06,0.123,0.75,109.997,4,188735
+When You Were Young,Amero,46,When You Were Young,31,0.806,0.845,-4.753,1,11,0.19,0.0825,0,0.26,0.508,125.998,4,128095
+Apologize,Farux,45,Apologize,48,0.677,0.71,-7.108,1,8,0.0552,0.532,0,0.337,0.325,126.109,4,129410
+Beauty And A Beat,Glamii,38,Beauty And A Beat,36,0.746,0.866,-3.113,0,9,0.148,0.124,1.26e-05,0.596,0.519,128.054,4,138750
+Why,Padé,39,Why (with WLHELMINA),38,0.61,0.902,-4.351,0,11,0.0764,0.133,0.000333,0.119,0.478,186.049,3,154839
+Better Days (NEIKED x Mae Muller x Polo G),NEIKED,68,Better Days (NEIKED x Mae Muller x Polo G),83,0.717,0.671,-5.077,0,0,0.0337,0.0018,2.54e-06,0.0921,0.699,110.054,4,160657
+The Motto,Tiësto,82,The Motto,87,0.754,0.763,-4.627,0,7,0.0435,0.0301,2.23e-05,0.0901,0.464,117.953,4,164819
+Need to Know,Doja Cat,88,Planet Her,85,0.664,0.609,-6.509,1,1,0.0707,0.304,0,0.0926,0.194,130.041,4,210560
+Whatever You Like,DLAY,34,Whatever You Like,49,0.687,0.679,-9.426,0,1,0.0432,0.109,0.000986,0.104,0.614,123.976,4,144677
+MONEY,LISA,70,LALISA,79,0.831,0.554,-9.998,0,1,0.218,0.161,6.12e-05,0.152,0.396,140.026,4,168228
+Freaks,Surf Curse,69,Freaks,85,0.345,0.941,-9.918,1,9,0.0466,3.84e-05,0.633,0.0511,0.407,179.626,4,147062
+Heart of Glass,Nito-Onna,61,Heart of Glass,54,0.75,0.838,-5.132,1,9,0.124,0.194,7.99e-06,0.313,0.397,123.89,4,144245
+Blinding Lights,The Weeknd,93,After Hours,90,0.514,0.73,-5.934,1,1,0.0598,0.00146,9.54e-05,0.0897,0.334,171.005,4,200040
+Thot Shit,Megan Thee Stallion,82,Thot Shit,72,0.95,0.693,-3.424,1,9,0.0898,0.0133,0,0.173,0.891,130.02,4,184635
+Mr. Saxobeat,Nito-Onna,61,Mr. Saxobeat,43,0.696,0.899,-5.812,0,6,0.144,0.131,0.00141,0.114,0.517,123.901,4,159927
+Moves Like Jagger,Timemachine,35,Moves Like Jagger,46,0.552,0.831,-7.228,0,6,0.194,0.0905,2.6e-05,0.44,0.733,127.851,4,199687
+Pumped Up Kicks,Madism,66,Pumped Up Kicks,75,0.669,0.687,-4.753,1,0,0.043,0.152,1.6e-05,0.308,0.386,123.903,4,145161
+Beautiful Mistakes (feat. Megan Thee Stallion),Maroon 5,85,JORDI (Deluxe),82,0.713,0.676,-5.483,1,10,0.027,0.0377,0,0.154,0.721,99.048,4,227395
+RAPSTAR,Polo G,83,RAPSTAR,49,0.789,0.536,-6.862,1,6,0.242,0.41,0,0.129,0.437,81.039,4,165926
+Lies,Dame Dame,48,Lies,37,0.823,0.771,-6.055,0,9,0.0365,0.627,0.00101,0.271,0.658,122.015,4,156885
+Ready 4 Luv - TMLH Summer Mix,CAZZETTE,50,Ready 4 Luv (TMLH Summer Mix),55,0.679,0.869,-4.701,0,5,0.138,0.00969,1.32e-05,0.278,0.41,125.09,4,170040
+Ain't Shit,Doja Cat,88,Planet Her,81,0.855,0.488,-4.601,1,3,0.208,0.506,0,0.347,0.619,124.097,4,174253
+Wellerman - Sea Shanty / 220 KID x Billen Ted Remix,Nathan Evans,66,Wellerman (Sea Shanty / 220 KID x Billen Ted Remix),77,0.722,0.893,-3.255,0,0,0.0475,0.0441,0.000937,0.0673,0.439,119.932,4,116750
+So Pretty,Reyanna Maria,51,So Pretty,66,0.799,0.543,-6.094,0,10,0.24,0.0512,0.0425,0.134,0.25,187.906,4,85742
+Todo De Ti,Rauw Alejandro,89,Todo De Ti,82,0.78,0.718,-3.605,0,3,0.0506,0.31,0.000163,0.0932,0.342,127.949,4,199604
+Write This Down (Instrumental),SoulChef,55,Escapism: Instrumentals,1,0.826,0.738,-4.658,0,10,0.0444,0.00355,0.939,0.0633,0.781,93.005,4,188421
+Peaches (feat. Daniel Caesar & Giveon),Justin Bieber,90,Justice,86,0.677,0.696,-6.181,1,0,0.119,0.321,0,0.42,0.464,90.03,4,198082
+positions,Ariana Grande,87,positions,3,0.736,0.802,-4.759,1,0,0.0864,0.468,0,0.094,0.675,144.005,4,172325
+Slow Down,Coopex,60,Slow Down,0,0.715,0.72,-3.906,1,9,0.193,0.134,0,0.366,0.41,128.048,4,138779
+What If,HOURS,35,What If,0,0.609,0.777,-5.879,1,6,0.0353,0.00162,1.28e-06,0.073,0.349,126.001,4,154286
+Running Away,VANO 3000,55,Running Away,72,0.58,0.696,-10.91,1,7,0.0408,0.66,0.852,0.145,0.721,93.688,4,111787
+Aesthetic,Xilo,39,Aesthetic,2,0.714,0.594,-10.63,1,0,0.43,0.965,0.255,0.129,0.45,169.837,4,158436
+Levitating (feat. DaBaby),Dua Lipa,88,Future Nostalgia,85,0.702,0.825,-3.787,0,6,0.0601,0.00883,0,0.0674,0.915,102.977,4,203064
+Work from Home,Coopex,60,Work from Home,54,0.845,0.669,-7.886,1,8,0.0658,0.181,0.00347,0.0897,0.86,125.014,4,151680
+Bundles (feat. Taylor Girlz),Kayla Nicole,54,Bundles (feat. Taylor Girlz),67,0.939,0.682,-5.931,1,11,0.306,0.00152,0,0.0552,0.584,130.022,4,154806
+Sweater Weather,The Neighbourhood,83,I Love You.,90,0.612,0.807,-2.81,1,10,0.0336,0.0495,0.0177,0.101,0.398,124.053,4,240400
+As It Was,Michael Shynes,52,As It Was,46,0.595,0.812,-5.623,1,9,0.0481,0.00321,1.38e-06,0.397,0.483,104.98,4,124571
+Follow Me,Senhit,44,Follow Me,60,0.707,0.867,-4.355,0,6,0.05,0.00453,0.00135,0.123,0.485,122.014,4,158247
+Calling My Phone,Lil Tjay,79,Calling My Phone,15,0.907,0.393,-7.636,0,4,0.0539,0.451,1.35e-06,0.135,0.202,104.949,4,205458
+Wicked Game,YES YES,54,Wicked Game,55,0.755,0.835,-6.727,1,9,0.0537,0.0202,0.000999,0.145,0.471,125.005,4,143040
+You Right,Doja Cat,88,Planet Her,84,0.828,0.621,-6.414,1,8,0.0565,0.0164,0.00233,0.0845,0.436,128.986,4,186173
+Whoopty,CJ,63,Whoopty,74,0.719,0.648,-7.6,0,3,0.125,0.2,0,0.127,0.66,140.201,4,123263
+Electric Love,BØRNS,67,Dopamine,82,0.611,0.797,-7.627,0,6,0.0533,0.00543,0.00137,0.26,0.518,120.041,4,218107
+When Hello Means Goodbye,Alex Alexander,46,On My Way,44,0.741,0.475,-7.665,1,2,0.205,0.0214,0,0.351,0.597,166.016,4,158160
+"More Than A Woman - From ""Saturday Night Fever"" Soundtrack",Bee Gees,75,How Can You Mend A Broken Heart,76,0.601,0.703,-6.24,1,7,0.0379,0.175,8.4e-05,0.571,0.673,106.164,4,196213
+Friday (feat. Mufasa & Hypeman) - Dopamine Re-Edit,Riton,68,Friday (feat. Mufasa & Hypeman) [Dopamine Re-Edit],83,0.824,0.862,-3.424,1,2,0.126,0.0076,0.000132,0.303,0.801,122.98,4,169153
+Hawái,Maluma,83,PAPI JUANCHO,77,0.783,0.727,-3.454,0,6,0.389,0.185,2.46e-05,0.0626,0.558,180.067,4,199112
+Mood (feat. iann dior),24kGoldn,74,Mood (feat. iann dior),18,0.7,0.722,-3.558,0,7,0.0369,0.221,0,0.272,0.756,90.989,4,140526
+Paid,Astelle,32,Paid,39,0.861,0.631,-10.286,1,8,0.23,0.0188,0.000283,0.0954,0.675,117.993,4,180923
+drivers license,Olivia Rodrigo,85,drivers license,29,0.585,0.436,-8.761,1,10,0.0601,0.721,1.31e-05,0.105,0.132,143.874,4,242014
+Lemonade,Internet Money,72,"Lemonade (feat. Gunna, Don Toliver & NAV)",76,0.799,0.66,-6.153,0,1,0.079,0.256,0,0.111,0.471,140.04,4,195429
+K Boy Bye,Astelle,32,K Boy Bye,39,0.547,0.865,-5.058,0,7,0.0483,0.0141,0,0.245,0.638,159.87,4,166354
+Up,Cardi B,81,Up (Instrumental),70,0.868,0.795,-6.044,1,11,0.269,0.0012,0.0193,0.0461,0.819,166.0,4,156945
+Just The Two of Us,Kauai45,50,Just The Two of Us,67,0.592,0.214,-13.468,1,1,0.115,0.936,1.62e-05,0.253,0.422,81.672,4,117037
+Play With Me,Ana Shine,39,Play With Me,48,0.714,0.666,-6.012,1,6,0.0756,0.223,0,0.102,0.486,95.065,4,178261
+Best Friend (feat. Doja Cat),Saweetie,73,Best Friend (feat. Doja Cat) [Remix EP],45,0.84,0.766,-4.12,1,4,0.136,0.00302,3.61e-06,0.0684,0.402,94.018,4,155884
+Cupid's Chokehold / Breakfast in America,Gym Class Heroes,68,The Papercut Chronicles,77,0.72,0.744,-6.938,0,1,0.12,0.237,0,0.255,0.619,78.953,4,243773
+Forever,Nadia Gattas,46,Forever,51,0.75,0.879,-4.88,0,4,0.0427,0.0233,0,0.193,0.333,124.038,4,181308
+The Business,Tiësto,82,The Business,83,0.798,0.62,-7.079,0,8,0.232,0.414,0.0192,0.112,0.235,120.031,4,164000
+telepatía,Kali Uchis,78,Sin Miedo (del Amor y Otros Demonios) ∞,82,0.653,0.524,-9.016,0,11,0.0502,0.112,0,0.203,0.553,83.97,4,160191
+"Gravity (feat. Tyler, The Creator)",Brent Faiyaz,80,"Gravity (feat. Tyler, The Creator)",72,0.539,0.615,-8.746,0,1,0.252,0.173,0.0056,0.144,0.493,163.924,4,214693
+motive (with Doja Cat),Ariana Grande,87,Positions (Deluxe),57,0.789,0.742,-5.664,0,10,0.0652,0.0681,0,0.166,0.661,116.965,4,167990
+Feel Your Love,Yusuf Alev,46,Feel Your Love,43,0.68,0.778,-6.294,1,6,0.0433,0.0705,0,0.31,0.511,124.981,4,172714
+Lost on You,sad girls,48,Lost on You,53,0.599,0.692,-4.43,0,1,0.0739,0.124,0,0.375,0.307,121.796,4,144349
+Good Days,SZA,82,Good Days,81,0.436,0.655,-8.37,0,1,0.0583,0.499,8.1e-06,0.688,0.412,121.002,4,279204
+What You Know Bout Love,Pop Smoke,83,Shoot For The Stars Aim For The Moon,81,0.709,0.548,-8.493,1,10,0.353,0.65,1.59e-06,0.133,0.543,83.995,4,160000
+Rude Boy,YES YES,54,Rude Boy,50,0.739,0.734,-6.062,1,6,0.259,0.0242,0,0.0921,0.471,101.995,4,174858
+WAP (feat. Megan Thee Stallion),Cardi B,81,WAP (feat. Megan Thee Stallion),80,0.935,0.454,-7.509,1,1,0.375,0.0194,0,0.0824,0.357,133.073,4,187541
+Savage Love (Laxed - Siren Beat),Jawsh 685,63,Savage Love (Laxed - Siren Beat),77,0.767,0.481,-8.52,0,0,0.0803,0.234,0,0.269,0.761,150.076,4,171375
+dirty laundry,blackbear,80,deadroses,65,0.766,0.64,-8.899,1,0,0.0345,0.051,0,0.237,0.67,100.044,4,165600
+HOLIDAY,Lil Nas X,81,HOLIDAY,73,0.81,0.511,-6.924,0,5,0.164,0.12,0,0.0832,0.837,151.947,4,154998
+WITHOUT YOU,The Kid LAROI,83,F*CK LOVE (SAVAGE),80,0.662,0.413,-7.357,1,0,0.0299,0.213,0,0.134,0.467,93.005,4,161385
+Fly,Alex D'Rosso,56,Fly,53,0.676,0.842,-5.98,1,8,0.239,0.0578,0.00137,0.209,0.388,140.142,4,134857
+ROCKSTAR (feat. Roddy Ricch),DaBaby,82,BLAME IT ON BABY,80,0.746,0.69,-7.956,1,11,0.164,0.247,0,0.101,0.497,89.977,4,181733
+34+35,Ariana Grande,87,Positions,80,0.83,0.585,-6.476,1,0,0.094,0.237,0,0.248,0.485,109.978,4,173711
+Rover (feat. DTG),S1mba,64,Rover (feat. DTG),78,0.613,0.624,-6.66,0,11,0.206,0.496,0,0.283,0.803,62.948,5,167917
+Put Your Records On,Ritt Momney,60,Put Your Records On,1,0.399,0.492,-10.777,0,6,0.0538,0.058,0.00101,0.11,0.159,91.066,4,210463
+Mood Swings (feat. Lil Tjay),Pop Smoke,83,Shoot For The Stars Aim For The Moon,78,0.48,0.602,-6.335,0,10,0.368,0.487,0,0.0848,0.269,179.798,4,213333
+Therefore I Am,Billie Eilish,88,Therefore I Am,75,0.889,0.34,-7.773,0,11,0.0697,0.218,0.13,0.055,0.716,94.009,4,174321
+Wild & Free,Nander,37,Wild & Free,39,0.474,0.722,-6.209,1,2,0.0355,0.0604,0,0.584,0.274,155.941,4,149231
+Glad You Came,Braaheim,59,Glad You Came,48,0.732,0.919,-4.634,0,6,0.115,0.0271,0.000866,0.375,0.136,125.997,4,190879
+For The Night (feat. Lil Baby & DaBaby),Pop Smoke,83,Shoot For The Stars Aim For The Moon,80,0.823,0.586,-6.606,0,6,0.2,0.114,0,0.193,0.347,125.971,4,190476
+Backyard Boy,Claire Rosinkranz,63,BeVerly Hills BoYfRiEnd,0,0.819,0.642,-7.037,1,5,0.189,0.336,0,0.0735,0.452,138.026,4,129241
+TKN (feat. Travis Scott),ROSALÍA,83,TKN (feat. Travis Scott),72,0.776,0.509,-6.266,0,0,0.467,0.192,1.49e-06,0.115,0.485,94.634,4,129371
+Say It Right,Coopex,60,Say It Right,60,0.712,0.816,-6.56,0,5,0.0447,0.152,0.0519,0.24,0.449,125.976,4,128095
+Without You,Baby Bluu,31,Without You,49,0.625,0.698,-5.804,1,0,0.146,0.0107,0,0.156,0.204,120.119,4,132625
+Play Date,Melanie Martinez,78,Cry Baby (Deluxe Edition),78,0.68,0.729,-5.077,1,5,0.0475,0.612,0,0.224,0.446,123.97,4,179867
+Freak,Doja Cat,88,Freak,72,0.688,0.716,-5.702,1,7,0.0385,0.0969,0,0.0989,0.373,116.912,3,284480
+Falling Down,Andrew Nagy,32,Falling Down,38,0.574,0.852,-9.051,1,5,0.0438,0.032,0.0705,0.136,0.0363,123.005,4,165854
+Wait a Minute!,WILLOW,76,ARDIPITHECUS,86,0.764,0.705,-5.279,0,3,0.0278,0.0371,1.94e-05,0.0943,0.672,101.003,4,196520
+Banana (feat. Shaggy) - DJ FLe - Minisiren Remix,Conkarah,53,Banana (feat. Shaggy) [DJ FLe - Minisiren Remix],65,0.824,0.854,-5.312,1,8,0.177,0.016,4.95e-05,0.117,0.896,95.114,4,210329
+Over You,Myrrhe,26,Over You,37,0.863,0.325,-7.864,1,0,0.341,0.667,1.71e-05,0.1,0.537,98.948,4,126314
+FLIP THE SWITCH (feat. Drake),Quavo,79,QUAVO HUNCHO,67,0.853,0.637,-5.924,0,3,0.331,0.129,0,0.267,0.496,86.048,4,156195
+The Boss,Coopex,60,The Boss,47,0.734,0.789,-5.328,1,11,0.243,0.0809,0.000115,0.215,0.258,125.992,4,133810
+Party Girl,StaySolidRocky,59,Party Girl,71,0.728,0.431,-9.966,0,6,0.0622,0.749,0,0.0996,0.629,130.022,4,147800
+Love Me Again,CPX,52,Love Me Again,46,0.798,0.824,-5.642,0,0,0.413,0.206,0.000308,0.436,0.242,125.0,4,134400
+Renee,SALES,61,Renee,65,0.924,0.386,-8.183,1,9,0.0548,0.755,0.00253,0.118,0.424,108.957,4,179125
+Don't Rush (feat. Headie One),Young T & Bugsey,60,Don't Rush (feat. Headie One),63,0.961,0.461,-8.684,1,9,0.27,0.202,0.00402,0.162,0.324,108.028,4,207640
+Right Here Waiting,Boostereo,52,Right Here Waiting,0,0.639,0.704,-7.332,1,10,0.0352,0.0646,0,0.445,0.285,115.052,4,180522
+THE SCOTTS,THE SCOTTS,58,THE SCOTTS,76,0.716,0.537,-7.648,0,0,0.0514,0.233,0,0.157,0.28,129.979,4,165978
+Cool for the Summer,Alex D'Rosso,56,Cool for the Summer,49,0.805,0.871,-5.716,1,6,0.286,0.177,7.5e-06,0.266,0.443,136.01,4,171696
+Kiss Me,Lucas Estrada,63,Kiss Me,47,0.588,0.685,-8.08,1,8,0.0624,0.374,0.000155,0.581,0.122,107.938,4,146669
+Red Flag,Pia Baris,18,Red Flag,31,0.715,0.706,-5.804,0,4,0.383,0.326,0.000231,0.525,0.348,126.069,4,137431
+One too Many Times,JRL,44,One Too Many Times,47,0.721,0.778,-6.53,0,8,0.0459,0.00262,7.29e-05,0.111,0.449,122.023,4,141636
+Boys Ain't Shit,SAYGRACE,58,Boys Ain't Shit,64,0.826,0.615,-4.729,0,1,0.137,0.435,0.00631,0.334,0.841,102.999,4,175884
+Boss Bitch,Doja Cat,88,Boss Bitch,78,0.707,0.955,-4.593,0,10,0.222,0.127,0,0.202,0.575,125.989,4,134240
+Only Girl,Coopex,60,Only Girl,52,0.792,0.832,-4.406,0,11,0.0397,0.367,0.00164,0.198,0.186,127.983,4,146465
+Tap In,Saweetie,73,Tap In,67,0.954,0.696,-7.117,0,10,0.204,0.00576,0.000498,0.0754,0.432,100.036,4,139413
+Forever,Gianni Blu,46,Forever,54,0.753,0.75,-4.314,1,11,0.0817,0.00421,3.47e-05,0.0775,0.266,124.998,4,167040
+Rather Be,Cabuizee,40,Rather Be,46,0.706,0.895,-3.879,0,8,0.148,0.299,0,0.48,0.556,120.978,4,163884
+Savage,Megan Thee Stallion,82,Suga,70,0.843,0.741,-5.609,1,11,0.334,0.0252,0,0.096,0.68,168.983,4,155497
+Blueberry Faygo,Lil Mosey,70,Certified Hitmaker,75,0.774,0.554,-7.909,1,0,0.0383,0.207,0,0.132,0.349,99.034,4,162547
+Break My Heart,Dua Lipa,88,Future Nostalgia,78,0.73,0.729,-3.434,0,4,0.0884,0.167,1.39e-06,0.349,0.467,113.011,4,221820
+On My Way,Alex Alexander,46,On My Way,40,0.67,0.544,-5.506,1,4,0.0252,0.0429,0,0.0926,0.772,96.039,3,200840
+Astronomia,Vicetone,63,Astronomia,60,0.653,0.945,-2.634,1,5,0.096,0.00561,0.915,0.439,0.325,126.093,4,198095
+The Box,Roddy Ricch,80,Please Excuse Me for Being Antisocial,81,0.896,0.586,-6.687,0,10,0.0559,0.104,0,0.79,0.642,116.971,4,196653
+What's up?,LeXxìv,32,What's up?,43,0.641,0.597,-7.06,1,9,0.033,0.000399,0,0.367,0.394,120.06,4,186000
+Supalonely,BENEE,67,STELLA & STEVE,72,0.863,0.631,-4.689,1,7,0.0534,0.305,3.04e-05,0.123,0.817,128.977,4,223480
+Toosie Slide,Drake,95,Dark Lane Demo Tapes,69,0.83,0.49,-8.82,0,1,0.209,0.289,3.04e-06,0.113,0.845,81.604,4,247059
+Don't Start Now,Dua Lipa,88,Don't Start Now,79,0.794,0.793,-4.521,0,11,0.0842,0.0125,0,0.0952,0.677,123.941,4,183290
+Be Kind (with Halsey),Marshmello,83,Be Kind (with Halsey),77,0.63,0.633,-7.088,1,4,0.0457,0.00776,0,0.0541,0.452,93.995,4,172762
+Intentions (feat. Quavo),Justin Bieber,90,Changes,77,0.806,0.546,-6.637,1,9,0.0575,0.3,0,0.102,0.874,147.986,4,212867
+Old Times,Xtinctor,21,Old Times,38,0.581,0.718,-5.631,1,1,0.0851,0.0195,0,0.075,0.149,92.992,4,184516
+"Hey, Soul Sister",LANDR,41,"Hey, Soul Sister",41,0.642,0.725,-7.89,1,11,0.0571,0.192,0,0.153,0.134,105.101,4,196583
+Later Bitches,The Prince Karma,50,Later Bitches,49,0.769,0.518,-6.563,1,8,0.102,0.000573,0.108,0.342,0.504,121.116,4,247976
+Life Is Good (feat. Drake),Future,87,Life Is Good (feat. Drake),77,0.676,0.609,-5.831,0,2,0.481,0.0706,0,0.152,0.508,142.037,4,237735
+WHATS POPPIN,Jack Harlow,84,WHATS POPPIN,4,0.923,0.604,-6.671,0,11,0.245,0.017,0,0.272,0.826,145.062,4,139741
+Let Her Go,LANDR,41,Let Her Go,44,0.712,0.803,-7.206,1,7,0.0276,0.00537,9.81e-05,0.307,0.308,120.018,4,201005
+Sunday Best,Surfaces,71,Where the Light Is,77,0.878,0.525,-6.832,1,5,0.0578,0.183,0,0.0714,0.694,112.022,4,158571
+DÁKITI,Dame Dame,48,DÁKITI,47,0.726,0.815,-5.092,0,4,0.101,0.206,0,0.631,0.627,121.975,4,147367
+Say So,Doja Cat,88,Hot Pink,80,0.787,0.673,-4.583,0,11,0.159,0.264,3.35e-06,0.0904,0.779,110.962,4,237893
+In Your Eyes,The Weeknd,93,After Hours,79,0.667,0.719,-5.371,0,7,0.0346,0.00285,8.1e-05,0.0736,0.717,100.021,4,237520
+Falling,Trevor Daniel,66,Falling,15,0.785,0.431,-8.756,0,10,0.0364,0.123,0,0.0887,0.236,127.085,4,159382
+Let It Go,Dame Dame,48,Let It Go,38,0.769,0.796,-7.37,1,8,0.0564,0.0279,1.97e-06,0.0871,0.681,122.039,4,130286
+death bed (coffee for your head),Powfu,71,death bed (coffee for your head),82,0.726,0.431,-8.765,0,8,0.135,0.731,0,0.696,0.348,144.026,4,173333
+That Way,Lil Uzi Vert,85,That Way,62,0.719,0.611,-5.01,0,7,0.0403,0.0582,0,0.155,0.489,129.962,4,212354
+Baby I'm Yours,Breakbot,57,By Your Side,69,0.829,0.792,-3.755,0,2,0.0668,0.726,5.83e-06,0.122,0.758,118.05,4,215507
+BOP,DaBaby,82,KIRK,76,0.769,0.787,-3.909,1,11,0.367,0.189,0,0.129,0.836,126.77,4,159715
+OUT WEST (feat. Young Thug),JACKBOYS,65,JACKBOYS,77,0.802,0.591,-4.895,1,8,0.225,0.0104,0,0.196,0.309,139.864,4,157712
+Blinding Lights,The Weeknd,93,Blinding Lights,18,0.513,0.796,-4.075,1,1,0.0629,0.00147,0.000209,0.0938,0.345,171.017,4,201573
+When the Sun Goes Down,Martin van Lectro,39,When the Sun Goes Down,37,0.544,0.748,-5.556,1,5,0.0865,0.0646,0,0.519,0.391,123.752,4,148999
+Skechers,DripReport,54,Skechers,0,0.907,0.332,-9.828,1,1,0.0836,0.326,0.0168,0.109,0.277,99.998,4,106031
+ROXANNE,Arizona Zervas,66,ROXANNE,78,0.621,0.601,-5.616,0,6,0.148,0.0522,0,0.46,0.457,116.735,5,163636
+Shooting Stars,Bag Raiders,53,Bag Raiders (Deluxe),0,0.649,0.716,-6.232,1,11,0.0445,0.0879,0.03,0.0824,0.503,124.968,4,235813
+The Git Up,Blanco Brown,60,The Git Up,3,0.847,0.678,-8.635,1,9,0.109,0.0669,0,0.274,0.811,97.984,4,200594
+Payphone,Faruk Orman,43,Payphone,45,0.721,0.707,-7.953,1,11,0.224,0.563,6.4e-06,0.338,0.462,125.07,4,128825
+I Don't Care (with Justin Bieber),Ed Sheeran,90,I Don't Care (with Justin Bieber),78,0.798,0.675,-5.041,1,6,0.0442,0.0912,0,0.0894,0.842,101.956,4,219947
+hot girl bummer,blackbear,80,hot girl bummer,5,0.778,0.559,-7.109,0,6,0.0776,0.128,0,0.399,0.678,129.989,1,185093
+Demons,CPX,52,Demons,56,0.7,0.848,-5.473,1,8,0.217,0.317,0,0.349,0.29,124.056,4,129693
+Girls Like You (feat. Cardi B) - Cardi B Version,Maroon 5,85,Red Pill Blues (Deluxe),74,0.851,0.541,-6.825,1,0,0.0505,0.568,0,0.13,0.448,124.959,4,235545
+Without Me,Halsey,83,Without Me,77,0.752,0.488,-7.05,1,6,0.0705,0.297,9.11e-06,0.0936,0.533,136.041,4,201661
+Plug Walk,Rich The Kid,67,The World Is Yours,70,0.876,0.519,-6.531,1,11,0.143,0.202,0,0.108,0.158,94.981,4,175230
+California Dreaming,Jorm,42,California Dreaming,53,0.717,0.865,-4.126,0,1,0.0307,0.0222,0.0012,0.605,0.487,124.048,4,152323
+Rockstar,Ilkay Sencan,61,Rockstar,69,0.771,0.826,-3.978,1,11,0.0604,0.142,0.03,0.145,0.185,100.012,4,212280
+Falling for U,Peachy!,57,Falling for U,1,0.516,0.358,-12.018,0,8,0.424,0.743,1.3e-06,0.0813,0.397,79.509,4,124000
+Lovely,Alfons,58,Lovely,45,0.504,0.677,-6.954,0,4,0.064,0.316,0.00127,0.268,0.0375,128.078,4,159023
+The Less I Know The Better,Tame Impala,78,Currents,84,0.64,0.74,-4.083,1,4,0.0284,0.0115,0.00678,0.167,0.785,116.879,4,216320
+Dandelions,Ruth B.,75,Safe Haven,90,0.609,0.692,-2.958,1,1,0.0259,0.0157,0,0.0864,0.454,116.959,3,233720
+Jimmy Cooks (feat. 21 Savage),Drake,95,"Honestly, Nevermind",92,0.529,0.673,-4.711,1,0,0.175,0.000307,2.41e-06,0.093,0.366,165.921,4,218365
+Good Looking,Suki Waterhouse,64,Good Looking,80,0.377,0.558,-9.076,1,4,0.0299,0.0789,0.000342,0.125,0.267,149.971,3,214800
+INFERNO,Sub Urban,67,INFERNO,71,0.82,0.611,-5.02,0,9,0.122,0.0766,2.5e-05,0.0684,0.637,127.883,4,133134
