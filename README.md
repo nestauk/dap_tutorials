@@ -1,10 +1,31 @@
-## Tutorials
+# Tutorials @ Nesta ✨ 
 
-As part of the #have-a-go series for our ds-meetings, we are demoing tools and libraries that people are keen to learn. We've created issues under the tag #have-a-go tag for all the tools and libraries people expressed interest in during the 30/06 DS team meeting. If you'd like to create a new issue for a tool you're keen to get a demo on, feel free to create one in this repo.
+**A one-stop shop for data analytics tutorials given @ Nesta 🛍️**
 
-We'd like to keep track of tool tutorials in a single place so if someone can't make a session, they can still complete a demo. Simply add your tutorial to this directory. When you've added it, make sure to update the directory below. Feel free to add a section if you need to.
+This repository is to store code for tutorials given @ Nesta. The tutorials are largely from our have-a-go series, a monthly session on a new tool/feature, led by those in the data analytics practice. 
 
-Happy tutorial-ing!
+## have-a-go purpose 🛎️ 
+
+**What’s the problem:** DS methods & tools often contain small hurdles to getting started…and documentation is not always great. 
+
+have-a-go has started as an *informal* 45 minute session, once a month on a method / tool / feature / best-practice that a team member (or 2!) has recently learned.
+
+The crucial element of the session is that everyone has a chance to **have-a-go** during the session, in the way of exercises or break out rooms.   
+
+## have-a-go process 🧰
+
+So you've decided to have-a-go! The process is a 5 steper:
+
+1. Decide on what you're keen to learn. Take a look at the existing tutorials to get some inspiration on what's out there. 
+2. [Sign up for a session](https://docs.google.com/document/d/1XoNQ9gSZ0xi8KM1DQVYtGe874cDet4iHUcU0w6wCvTI/edit?usp=gmail_thread) to recap on what you've learnt.   
+3. Add code and a high level tl;dr README.md in its own directory in this repo. You can simply name the directory the tool / method you learned. You do NOT need to create a powerpoint for the session, the most important element is exercises/questions that everyone can try to answer in the session. 
+4. Slack any set up instructions _in advance (2-3 days)_ to the #ds-team channel
+5. Demo away! You'll know the session is a success if people have a change to use the tool.  
+6. Once you've done your have-a-go session, please @ the next person in the have-a-go sign up sheet as a reminder.  
+
+## to code review or not? 🤔 
+
+Tag someone in a minimal PR to **make sure the code runs** before your demo. 
 
 ## Directory
 
