@@ -21,7 +21,7 @@ So you've decided to have-a-go! The process is a 6 step-er:
 3. Add code and a high level tl;dr README.md in its own directory in this repo. The readme should minimally summarise what the tool/feature/method is, when its used, why its interesting and perhaps relevant libraries/modules/etc. and links for people to learn more. You can simply name the directory the tool / method you learned. You do NOT need to create a powerpoint for the session, the most important element is exercises/questions that everyone can try to answer in the session. 
 4. Slack any set up instructions _in advance (2-3 days)_ to the #ds-team channel
 5. Demo away! You'll know the session is a success if people have a change to use the tool.  
-6. Once you've done your have-a-go session, please @ the next person in the have-a-go sign up sheet as a reminder.  
+6. Once you've done your have-a-go session, please @ the next person in the have-a-go sign up sheet as a reminder. Please also add your demo to the [**Directory**](https://github.com/nestauk/dap_tutorials#directory) below.  
 
 ## to code review or not? 🤔 
 
