@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# +
 """
 Created on Tue Nov 22 15:10:50 2022
 @author: VolcanoBlue13
@@ -14,6 +15,9 @@ import folium
 from streamlit_folium import folium_static
 import utils
 
+import os
+# -
+
 # # NOTE: This is adapted from the https://data-science-at-swast-handover-poc-handover-yfa2kz.streamlit.app/
 # # Original source code: https://github.com/data-science-at-swast/handover_poc/blob/main/handover.py
 
@@ -24,14 +28,14 @@ st.set_page_config(page_title='2020 Six Nations',  layout='wide', page_icon=':ru
 
 t1, t2 = st.columns((0.07,1)) 
 
+current_dir = os.getcwd()
+
 # This assigns the image to the first column
-t1.image('images/six_nations.jpeg', width = 100)
+t1.image(f'{current_dir}/images/six_nations.jpeg', width = 100)
 # This creates a title and adds some markdown for the second column
 t2.title("2020 Guinness Six Nations - Statistics Report")
 t2.markdown("  **website:** https://www.sixnationsrugby.com/ **| email:** mailto:data-analytics@nesta.org.uk")
 
-
-# # Data
 
 ## This adds a spinner into the webpage to let the user know it's updating.
 def streamlit_demo():
@@ -39,9 +43,9 @@ def streamlit_demo():
 
         #Metrics setting and rendering
 
-        player_stats = pd.read_excel('datasets/six_nations.xlsx',sheet_name = 'All player stats')
-        team_stats_2019 = pd.read_excel('datasets/six_nations.xlsx',sheet_name = '2019 Team Stats')
-        stadiums = pd.read_excel('datasets/six_nations.xlsx',sheet_name = 'Stadiums')
+        player_stats = pd.read_excel(f'{current_dir}/datasets/six_nations.xlsx',sheet_name = 'All player stats')
+        team_stats_2019 = pd.read_excel(f'{current_dir}/datasets/six_nations.xlsx',sheet_name = '2019 Team Stats')
+        stadiums = pd.read_excel(f'{current_dir}/datasets/six_nations.xlsx',sheet_name = 'Stadiums')
         ## You could read this in and get this list from the data but Streamlit will have to rerun this every time it updates the report, so I recommend keeping as much as you can in the code itself rather than reading it in.
         countries = ["All", "England ", "France", "Ireland", "Italy", "Scotland", "Wales"]
         country = st.selectbox('Choose country', countries, help = 'Filter report to show only one country')
