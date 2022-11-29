@@ -39,7 +39,7 @@ If you're not feeling the rugby theme, have a look at the [Streamlit gallery](ht
 
 **Now we need to add in the secrets file so the password will work.**
 
-6. `mkdir .streamlit && touch secrets.toml`
+6. `mkdir .streamlit && touch .streamlit/secrets.toml`
 
 
 7. In the `.streamlit/secrets.toml` file create a password so the file should look like this:
