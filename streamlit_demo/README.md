@@ -32,7 +32,7 @@ If you're not feeling the rugby theme, have a look at the [Streamlit gallery](ht
 
 ```
 1. git clone git@github.com:nestauk/dap_tutorials.git
-2. cd streamlit_demo
+2. cd dap_tutorials/streamlit_demo
 3. conda create --name streamlit_demo python
 4. conda activate streamlit_demo
 5. pip install -r requirements.txt
