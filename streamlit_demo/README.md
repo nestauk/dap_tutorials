@@ -30,27 +30,24 @@ If you're not feeling the rugby theme, have a look at the [Streamlit gallery](ht
 
 ### **Steps**
 
-```
-1. git clone git@github.com:nestauk/dap_tutorials.git
-2. cd dap_tutorials/streamlit_demo
-3. conda create --name streamlit_demo python
-4. conda activate streamlit_demo
-5. pip install -r requirements.txt
-```
+
+1. `git clone git@github.com:nestauk/dap_tutorials.git`
+2. `cd dap_tutorials/streamlit_demo`
+3. `conda create --name streamlit_demo python`
+4. `conda activate streamlit_demo`
+5. `pip install -r requirements.txt`
+
 **Now we need to add in the secrets file so the password will work.**
 
-```
-6. mkdir .streamlit && touch secrets.toml
-```
+6. `mkdir .streamlit && touch secrets.toml`
+
 
 7. In the `.streamlit/secrets.toml` file create a password so the file should look like this:
 ```
 PASSWORD = "streamlitdemo"
 ```
-We can now run the app:
-```
-8. streamlit run streamlit_six_nations_demo.py
-```
+8. We can now run the app `streamlit run streamlit_six_nations_demo.py`
+
 
 It should automatically open in a web browser, if not, just copy and paste the link across.
 
