@@ -37,6 +37,7 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 ### Data viz
 
 - [**Altair Demo**](altair_demo/): An introduction to plotting with Altair. Includes Nesta styling 💅
+- [**Streamlit Demo**](streamlit_demo/): An introduction to creating Streamlit apps.
 
 ### Machine Learning
 
