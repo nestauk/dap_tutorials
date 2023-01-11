@@ -21,6 +21,9 @@ Open your terminal and follow the instructions:
 `git clone https://github.com/nestauk/dap_tutorials.git`
 
 2. **Navigate to this tutorial's folder:** 
+Navigate to your repos folder (the folder where you store all your local GitHub repositories) and then do:
+
+`cd dap_tutorials`
 
 `cd collect_twitter_data`
 
