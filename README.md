@@ -48,6 +48,10 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 
 - [**ABM Demo**](abm_demo/): An introduction to agent based modelling with Mesa 👾
 
+### Collecting data from APIs:
+
+- [**Collecting data from Twitter API**](/collect_twitter_data): An introduction to Twitter API v2 recent search a filtered stream endpoints.
+
 ### Other
 
 - [**KNIME Low Code**](knime_low_code/): Reproducing programmes and machine learning pipelines with KNIME, a visual programming tool.
