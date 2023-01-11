@@ -45,11 +45,11 @@ Open your terminal and follow the instructions:
 
 8. **Open the first notebook and make sure you have the correct kerne** 
 
-Launch `jupyter-notebook` and make sure your kernel is the right environment, `collect_twitter_data`.
+Launch `jupyter-notebook` and open notebook "01. Your first Twitter API request" make sure your kernel is the right environment, `collect_twitter_data`. Run the notebook to check if the previous setup worked for you.
 
 
 ## Tutorial 🤓
-This have-a-go will start with an introduction to Twitter API v2 and then we will go through a series of jupyter notebooks, where you will have exercises to help you get familiar with the API.
+This have-a-go session will start with a brief theoretical introduction to Twitter API v2. Then we will go through a series of jupyter notebooks with exercises to help you get familiar with the API.
 
 1. **[Your first Twitter API request](https://github.com/nestauk/dap_tutorials/blob/dev/collect_twitter_data/01.%20Your%20first%20Twitter%20API%20request.ipynb)**
 
@@ -63,7 +63,7 @@ On the first part of this tutorial you will learn how to make your first Twitter
  'id': '100'}
 ```
 
-2. **[Tweets from the past 7 days](https://github.com/nestauk/dap_medium_articles/blob/dev/collect_twitter_data/02.%20Tweets%20from%20the%20past%207%20days.ipynb)**
+2. **[Tweets from the past 7 days](https://github.com/nestauk/dap_tutorials/blob/dev/collect_twitter_data/02.%20Tweets%20from%20the%20past%207%20days.ipynb)**
 
 On the second part of this tutorial, we will collect Twitter data from the past 7 days using the recent search endpoint. This time, we are collecting additional user information, like in the mock example below:
 
@@ -76,4 +76,10 @@ On the second part of this tutorial, we will collect Twitter data from the past 
  'verified': False}
 ```
 
-3. **[Exercises to explore the search endpoint](https://github.com/nestauk/dap_tutorials/blob/dev/twitter_api_tutorial/Exercises%20to%20explore%20the%20search%20endpoint.ipynb)**
+3. **[Exercises to explore the recent search endpoint](https://github.com/nestauk/dap_tutorials/blob/dev/collect_twitter_data/03.%20Exercises%20to%20explore%20the%20search%20endpoint.ipynb)**
+
+A list of exercises for you to explore the recent search endpoint.
+
+4. **[Filtered stream of tweets](https://github.com/nestauk/dap_tutorials/blob/dev/collect_twitter_data/04.%20Filtered%20stream%20of%20tweets.ipynb)**
+
+A brief exploration of the filtered stream endpoint.
