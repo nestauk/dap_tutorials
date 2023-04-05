@@ -25,9 +25,9 @@ conda install -c anaconda ipykernel
 python -m ipykernel install --user --name=bokeh_demo
 ```
 
-Test whether the code runs properly
+Optional: Check whether the code runs properly
 
 - `cd bokeh_demo/code`
 - Run intro.ipynb with Jupyter notebook
-- Run `python callbacks_version.py`
-- Run `bokeh serve --show 03_switch_data_source.py`
+- Run `python interactive_easter_eggs.py`
+- Run `bokeh serve --show 01_slider.py`
