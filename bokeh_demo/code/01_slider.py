@@ -23,12 +23,13 @@ max_width = egg_data["width"].max()
 
 
 # Create a plot and label axes
-p = figure(width=800,
-           height=800,
-           x_range=(0, max_length),
-           y_range=(0, max_width),
-           title="Easter egg widths and lengths"
-           )
+p = figure(
+    width=800,
+    height=800,
+    x_range=(0, max_length),
+    y_range=(0, max_width),
+    title="Easter egg widths and lengths",
+)
 p.xaxis.axis_label = "Length (cm)"
 p.yaxis.axis_label = "Width (cm)"
 
@@ -36,41 +37,37 @@ p.yaxis.axis_label = "Width (cm)"
 # Cosmetics
 color_map = Spectral[4]
 types = ["Chocolate egg", "Vegan chocolate egg", "Real egg"]
-markers = ["hex", "circle_x", "triangle"]
+markers = ["circle", "hex_dot", "inverted_triangle"]
 
 # Scatter plot
-fm = factor_mark("type", ["hex", "circle_x", "triangle"], types)
+fm = factor_mark("type", markers, types)
 fc = factor_cmap("type", color_map, types)
 
-scatter_plot = p.scatter("length", "width",
-          source=egg_data, 
-          legend_field="type",
-          fill_alpha=0.4, 
-          size=12,
-          marker=fm,
-          color=fc,
-          )
+scatter_plot = p.scatter(
+    "length",
+    "width",
+    source=egg_data,
+    legend_field="type",
+    fill_alpha=0.4,
+    size=12,
+    marker=fm,
+    color=fc,
+)
 
 p.legend.location = "top_left"
 
 
 # Length slider
 length_slider = Slider(
-    start=min_length,
-    end=max_length,
-    value=min_length,
-    step=0.1,
-    title="Minimum Length"
+    start=min_length, end=max_length, value=min_length, step=0.1, title="Minimum Length"
 )
 
 # Functions for updating data shown in plot
 
+
 def update_shown_data():
-    """Update the data shown in plot based on input via minimum length slider.
-    """
-    filtered_data = egg_data[
-        (egg_data["length"] >= min_length)
-        ]
+    """Update the data shown in plot based on input via minimum length slider."""
+    filtered_data = egg_data[(egg_data["length"] >= min_length)]
     scatter_plot.data_source.data.update(ColumnDataSource(filtered_data).data)
 
 
@@ -93,7 +90,6 @@ length_slider.on_change("value", change_min_length)
 
 # Output to server
 curdoc().add_root(row(column(length_slider), p))
-
 
 
 ### Your Turn: Add another slider for minimum width
