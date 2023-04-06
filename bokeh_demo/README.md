@@ -6,6 +6,7 @@
 - [Introduction](#intro)
 - [Interacive plots](#interactive)
 - [How to get started](#get_started)
+- [Data sources](#data)
 
 ## Introduction<a id='intro'></a>
 [[back to top]](#top)
@@ -95,6 +96,19 @@ Optional: Check whether the code runs properly
 - Run Bokeh_introduction.ipynb with Jupyter notebook
 - Run `python interactive_easter_eggs.py`
 - Run `bokeh serve --show 01_slider.py`
+
+
+## Data sources<a id='data'></a>
+[[back to top]](#top)
+
+We provide two data sources with this tutorial:
+
+- [`easter_eggs.csv`](https://github.com/nestauk/dap_tutorials/blob/main/bokeh_demo/data/easter_eggs.csv)
+- [`reduced_epc.csv`](https://github.com/nestauk/dap_tutorials/blob/main/bokeh_demo/data/reduced_epc.csv)
+
+The Easter egg data is actually the IRIS dataset adapted for the Easter holidays. Note that it does not actually reflect the size or nutrients of Easter eggs. ;-) 
+
+The reduced EPC data represents a cleansed and enhanced version of [EPC records](https://www.google.com/url?q=https://epc.opendatacommunities.org/&sa=D&source=docs&ust=1680813102477902&usg=AOvVaw1A0upXwIfSO5Z9xGoN1Nxq) from Wales until September 2022, including the features `CURRENT_ENERGY_RATING`, `CONSTRUCTION_AGE_BAND`, `BUILT_FORM`, `PROPERTY_TYPE`, `HP_INSTALLED`, `HP_INSTALL_DATE`. This dataset is more suitable than the Easter egg set for creating Bokeh time series or bar charts.
 
 
 
