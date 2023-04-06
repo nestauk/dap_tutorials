@@ -3,7 +3,7 @@ import pandas as pd
 from bokeh.plotting import figure, curdoc
 
 from bokeh.models import ColumnDataSource
-from bokeh.layouts import row, column
+from bokeh.layouts import row
 from bokeh.plotting import figure, curdoc
 from bokeh.models import ColumnDataSource, Slider
 
@@ -89,7 +89,7 @@ def change_min_length(attr, old, new):
 length_slider.on_change("value", change_min_length)
 
 # Output to server
-curdoc().add_root(row(column(length_slider), p))
+curdoc().add_root(row(length_slider, p))
 
 
 ### Your Turn: Add another slider for minimum width

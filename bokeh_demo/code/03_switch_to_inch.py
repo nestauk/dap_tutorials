@@ -82,7 +82,7 @@ switched_to_inch = False
 
 # Functions for updating data shown in plot
 def update_shown_data():
-    """Update the data shown in plot based on input via minimum length slider."""
+    """Update the data shown in plot based on input via sliders and buttons."""
 
     # Switch to inches
     if switched_to_inch:

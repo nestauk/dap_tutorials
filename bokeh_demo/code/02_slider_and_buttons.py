@@ -75,9 +75,8 @@ selected_type = 0
 
 # Functions for updating data shown in plot
 
-
 def update_shown_data():
-    """Update the data shown in plot based on input via minimum length slider."""
+    """Update the data shown in plot based on input via minimum length slider and buttons."""
 
     filtered_data = egg_data
 

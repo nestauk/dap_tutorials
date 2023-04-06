@@ -1,12 +1,14 @@
 import pandas as pd
 
 from bokeh.layouts import row, column
-from bokeh.plotting import figure, output_file, figure, output_file, save
+from bokeh.plotting import figure, curdoc, output_file, figure, output_file, save
 from bokeh.models import ColumnDataSource, RangeSlider, RadioButtonGroup, CustomJS
 from bokeh.models.widgets.buttons import Toggle
 
 from bokeh.transform import factor_cmap, factor_mark
 from bokeh.palettes import Spectral
+
+import templates
 
 ### -----
 
@@ -69,7 +71,7 @@ type_buttons = RadioButtonGroup(
     labels=["All", "Real egg", "Chocolate egg", "Vegan chocolate egg"], active=0
 )
 
-
+# Toggle button for switching to inch and back to cm
 inch_button = Toggle(label="Switch to inch", button_type="primary", width=50)
 combined_callback_code = """
 
@@ -131,8 +133,6 @@ callback = CustomJS(
     code=combined_callback_code,
 )
 
-switched_to_inch = False
-
 
 # Functions for updating data shown in plot
 
@@ -141,65 +141,21 @@ range_slider.js_on_change("value", callback)
 type_buttons.js_on_change("active", callback)
 inch_button.js_on_click(callback)
 
+# Averta font (could be atted to template)
+p.yaxis.axis_label_text_font = "Averta"
+p.xaxis.axis_label_text_font = "Averta"
+p.title.text_font = "Averta"
+p.legend.label_text_font = "Averta"
+
+# Save
 output_file("../outputs/interactive_easter_eggs.html")
-
-
-template = template = """{% block postamble %}
-
-    <style type="text/css">
-      @font-face {
-        font-family: "Averta";
-        src: url("Intelligent Design - Averta-Regular.otf") format("truetype");
-        }
-      p.customfont { 
-        font-family: "Averta";
-        }
-
-    .bk-root .bk-btn-primary  {
-        color: #FDFEFE;
-        background-color: #0000FF;
-        border-color: #21618C;
-        }
-
-    .bk-root .bk-btn-default.bk-active {
-        color: #FDFEFE;
-        background-color: #0000FF;
-        border-color: #21618C;
-        }
-
-    input[type="checkbox"] {
-        accent-color: 
-        }
-    
-    .bk-root {font-family: Averta}
-
-    .bok-root div.bk-tooltip.bk-left
-
-    {
-        color: #0000FF;
-    }
-
-     .bk-root .bk-tooltip {
-        color: #0000FF;
-    }
-
-    .center {
-     
-      display: flex;
-      justify-content: center;
-      font-family: "Averta";
-
-      }
-
-      </style> 
-    {% endblock %} """
-
 
 save(
     row(
         column(range_slider, type_buttons, inch_button, width=400),
         column(p, sizing_mode="scale_both"),
     ),
-    template=template,
+    template=templates.nesta_template,
 )
+
 ### Your Turn: Take one of your datasets and build something similar of your own
