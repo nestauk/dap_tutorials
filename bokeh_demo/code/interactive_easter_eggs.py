@@ -15,8 +15,8 @@ import templates
 egg_data = pd.read_csv("../data/easter_eggs.csv")
 
 egg_data_inch = egg_data.copy()
-egg_data_inch["length"] = egg_data["length"] / 2.54
-egg_data_inch["width"] = egg_data["width"] / 2.54
+egg_data_inch['length'] = egg_data['length']/2.54 
+egg_data_inch['width'] = egg_data['width']/2.54 
 
 source = ColumnDataSource(egg_data)
 
@@ -26,13 +26,12 @@ max_width = egg_data["width"].max()
 
 
 # Create a plot and label axes
-p = figure(
-    width=600,
-    height=600,
-    x_range=(0, max_length + 1 / 10 * max_length),
-    y_range=(0, max_width + 1 / 10 * max_width),
-    title="Easter egg widths and lengths",
-)
+p = figure(width=600,
+           height=600,
+           x_range=(0, max_length+1/10*max_length),
+           y_range=(0, max_width+1/10*max_width),
+           title="Easter egg widths and lengths"
+           )
 p.xaxis.axis_label = "Length (cm)"
 p.yaxis.axis_label = "Width (cm)"
 
@@ -46,16 +45,14 @@ markers = ["hex", "circle_x", "triangle"]
 fm = factor_mark("type", ["hex", "circle_x", "triangle"], types)
 fc = factor_cmap("type", color_map, types)
 
-p.scatter(
-    "length",
-    "width",
-    source=source,
-    legend_field="type",
-    fill_alpha=0.4,
-    size=12,
-    marker=fm,
-    color=fc,
-)
+p.scatter("length", "width",
+          source=source, 
+          legend_field="type",
+          fill_alpha=0.4, 
+          size=12,
+          marker=fm,
+          color=fc,
+          )
 
 p.legend.location = "top_left"
 
@@ -63,16 +60,22 @@ p.legend.location = "top_left"
 
 # Length slider
 range_slider = RangeSlider(
-    start=0, end=max_length, value=(0, max_length), step=0.1, title="Length slider"
+    start=0,
+    end=max_length,
+    value=(0, max_length),
+    step=0.1,
+    title="Length slider"
 )
 
 # Radio buttons with initia selection ("All")
-type_buttons = RadioButtonGroup(
-    labels=["All", "Real egg", "Chocolate egg", "Vegan chocolate egg"], active=0
-)
+type_buttons = RadioButtonGroup(labels=['All', 'Real egg', 'Chocolate egg', 'Vegan chocolate egg'], active=0)
 
 # Toggle button for switching to inch and back to cm
-inch_button = Toggle(label="Switch to inch", button_type="primary", width=50)
+inch_button = Toggle(
+    label="Switch to inch",
+    button_type="primary",
+    width=50
+)
 combined_callback_code = """
 
 var data = source.data;
@@ -125,12 +128,13 @@ callback = CustomJS(
         slider_value=range_slider,
         type_selection=type_buttons,
         inch_toggle=inch_button,
-        ax1=p.xaxis,
+        ax1=p.xaxis, 
         ax2=p.yaxis,
         x_range=p.x_range,
         y_range=p.y_range,
+
     ),
-    code=combined_callback_code,
+    code=combined_callback_code
 )
 
 
@@ -145,17 +149,11 @@ inch_button.js_on_click(callback)
 p.yaxis.axis_label_text_font = "Averta"
 p.xaxis.axis_label_text_font = "Averta"
 p.title.text_font = "Averta"
-p.legend.label_text_font = "Averta"
+p.legend.label_text_font = 'Averta'
 
 # Save
-output_file("../outputs/interactive_easter_eggs.html")
+output_file('../outputs/interactive_easter_eggs.html')
 
-save(
-    row(
-        column(range_slider, type_buttons, inch_button, width=400),
-        column(p, sizing_mode="scale_both"),
-    ),
-    template=templates.nesta_template,
-)
+save(row(column(range_slider, type_buttons, inch_button, width=400), column(p, sizing_mode='scale_both')), template=templates.nesta_template)
 
 ### Your Turn: Take one of your datasets and build something similar of your own
