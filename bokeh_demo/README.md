@@ -11,6 +11,7 @@
 ## Introduction<a id='intro'></a>
 [[back to top]](#top)
 
+![](code/img/bokeh_teaser.png)
 
 Bokeh is a Python library for creating interactive visualizations for modern web browsers. It helps you build beautiful graphics, ranging from simple plots to complex dashboards with streaming datasets. [[Bokeh documentation]](https://docs.bokeh.org/en/latest/)
 

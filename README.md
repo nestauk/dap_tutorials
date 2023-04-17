@@ -38,6 +38,7 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 
 - [**Altair Demo**](altair_demo/): An introduction to plotting with Altair. Includes Nesta styling 💅
 - [**Streamlit Demo**](streamlit_demo/): An introduction to creating Streamlit apps.
+- [**Bokeh Demo**](bokeh_demo/): An introduction to interactive visualisaitons with bokeh.
 
 ### Machine Learning
 
