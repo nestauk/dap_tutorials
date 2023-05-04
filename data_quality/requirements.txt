@@ -1,0 +1,4 @@
+pandas
+ydata_profiling
+great_expectations
+ipykernel
