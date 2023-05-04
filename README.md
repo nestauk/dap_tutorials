@@ -49,9 +49,12 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 
 - [**ABM Demo**](abm_demo/): An introduction to agent based modelling with Mesa 👾
 
-### Collecting data from APIs:
+### Data collection
 
 - [**Collecting data from Twitter API**](/collect_twitter_data): An introduction to Twitter API v2 recent search a filtered stream endpoints.
+
+### Data quality
+- [**Data profiling and Data Quality**](/data_quality): Using YData-Profiling and Great Expectations to perform EDA, data profiling, validating data batches and for automating data quality checks.
 
 ### Other
 
