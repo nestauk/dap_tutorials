@@ -43,4 +43,4 @@ Launch `jupyter-notebook` and open notebooks "1. Ydata-profiling - the tutorial"
 We use slightly altered versions of the [Titanic dataset](https://github.com/adamerose/datasets/blob/master/titanic.csv) and the [Heart Failure Prediction dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) for the purpose of this tutorial.
 
 ## 🤓 Tutorial 
-This have-a-go session will start with an introduction two the two Python packages followed by a set of exercises.
+This have-a-go session will start with an introduction to the two Python packages followed by a set of exercises.
