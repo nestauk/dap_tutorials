@@ -35,7 +35,7 @@ Navigate to your repos folder (the folder where you store all your local GitHub 
 
 7. **Open the first notebook and make sure you have the correct kernel selected** 
 
-Launch `jupyter-notebook` and open notebook "01. Your first Twitter API request" make sure your kernel is the right environment, `data_quality`. Run the notebook to check if the previous setup worked for you. If all runs fine, then you're prepared for the session!
+Launch `jupyter-notebook` and open notebooks "1. Ydata-profiling - the tutorial" and "2. Great Expectations - the tutorial" and make sure your kernel is the right environment, `data_quality`. Run the notebooks to check if the previous setup worked for you. If all runs fine, then you're prepared for the session!
 
 (If you do not have conda installed/do not want to install it, just use your standard Python environment)
 
