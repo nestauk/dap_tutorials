@@ -52,6 +52,7 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 ### Data collection
 
 - [**Collecting data from Twitter API**](/collect_twitter_data): An introduction to Twitter API v2 recent search a filtered stream endpoints.
+- [**An intro to web scraping**](/intro_web_scraping): The basics of web scraping.
 
 ### Data quality
 - [**Data profiling and Data Quality**](/data_quality): Using YData-Profiling and Great Expectations to perform EDA, data profiling, validating data batches and for automating data quality checks.
