@@ -1,0 +1,8 @@
+langchain
+openai
+toolz
+kor
+tiktoken
+tabulate
+wikipedia
+chromadb
