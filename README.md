@@ -60,3 +60,4 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 ### Other
 
 - [**KNIME Low Code**](knime_low_code/): Reproducing programmes and machine learning pipelines with KNIME, a visual programming tool.
+- [**langchain**](langchain/): An introduction to langchain, a library for building language model applications. 
