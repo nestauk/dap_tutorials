@@ -6,3 +6,4 @@ tiktoken
 tabulate
 wikipedia
 chromadb
+typing-extensions
