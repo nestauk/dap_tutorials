@@ -1,0 +1,86 @@
+# Nesta colours
+nesta_colours: &nesta_colours
+  - &col1 "#0000FF"
+  - &col2 "#FDB633"
+  - &col3 "#D2C9C0"
+  - &col4 "#18A48C"
+  - &col5 "#EB003B"
+  - &col6 "#9A1BBE"
+  - &col7 "#FF6E47"
+  - &col8 "#0F294A"
+  - &col9 "#97D9E3"
+  - &col10 "#A59BEE"
+  - &col11 "#F6A4B7"
+  - &col12 "#646363"
+  - &col13 "#FFFFFF"
+  - &col14 "#000000"
+
+# Alternative font/theme for altair figures in Quarto
+altfont: &idfont "Sans-Serif"
+
+altair_theme:
+  axis:
+    domainColor: "#000000"
+    gridColor: "#D2C9C0"
+    labelColor: "#000000"
+    labelFont: *idfont
+    labelFontSize: 13.0
+    tickColor: "#fff"
+    titleColor: "#000000"
+    titleFont: *idfont
+    titleFontSize: 13.0
+    labelLimit: 0
+    titleLimit: 0
+  header:
+    labelFont: *idfont
+    labelFontSize: 20
+    titleFont: *idfont
+    titleFontSize: 20
+  legend:
+    labelColor: "#000000"
+    labelFont: *idfont
+    labelFontSize: 13.0
+    titleColor: "#000000"
+    titleFont: *idfont
+    titleFontSize: 13.0
+    labelLimit: 0
+    titleLimit: 0
+    symbolStrokeWidth: 1.5
+    symbolSize: 150
+  range:
+    category: *nesta_colours
+    diverging: *nesta_colours
+    heatmap: *nesta_colours
+    ordinal: *nesta_colours
+    ramp: *nesta_colours
+    scheme: *nesta_colours
+  title:
+    anchor: "middle"
+    color: "#000000"
+    font: *idfont
+    fontSize: 20.0
+  view:
+    strokeWidth: 0
+
+# Altair colour palettes
+altair_scheme: 'yellowgreenblue'
+altair_domain: 
+  start: 1
+  stop: 11
+  step: 1
+
+# Folium scheme
+folium_scheme: 'YlGnBu'
+
+# England Regions
+regions: [
+    "North East",
+    "North West",
+    "Yorkshire and The Humber",
+    "East Midlands",
+    "West Midlands",
+    "South West",
+    "East",
+    "South East",
+    "London",
+]

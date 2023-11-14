@@ -1,0 +1,9 @@
+pandas==1.5.1
+altair==4.2.0
+openpyxl
+numpy
+geopandas
+matplotlib
+folium
+quarto
+nesta_ds_utils[viz,s3] @ git+https://github.com/nestauk/nesta_ds_utils.git

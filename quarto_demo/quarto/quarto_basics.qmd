@@ -1,0 +1,248 @@
+---
+# Adding a title
+title: "Quarto basics"
+# Changing the background colour for the title block
+title-block-banner: "#0000FF"
+# Changing the text colour for the title block
+title-block-banner-color: "#FFFFFF"
+# Do we want to add a table of contents: true/false
+toc: true
+# Where do we want the table of contents to be located: left/right/body
+toc-location: left
+# Do we want the sections numbered: true/false
+number-sections: true
+# See code annotations section for more info
+code-annotation-style: below
+# What format do we want to output in, there a lot of different options depending on what you are try to do. See https://quarto.org/docs/output-formats/all-formats.html for more info
+format:
+  html:
+    # Do we want the html to be standalone? i.e. do we want to be able to send it to someone and they can open it in their browser without having to download anything else. Note: this will obviously make the file size larger and limits functionality for more complex interactive outputs. 
+    self-contained: true
+    # For similar reasons to above, do we want to embed the resources so it can be standalone?
+    embed-resources: true
+    # Choose the font you want to use, some fonts may not work with all browsers, e.g. Averta doesn't work with Safari
+    mainfont: Sans-Serif
+    # Changing the dimensions of the page
+    grid:
+        body-width: 1000px
+        margin-width: 175px
+        sidebar-width: 150px
+        gutter-width: 1.5em
+# Adding a favicon
+include-in-header:
+  - text: |
+     <link rel = "shortcut icon" href = "images/favicon.ico" />
+# Options at execution     
+execute:
+  # Do we want warnings to be shown?
+  warning: false
+  # Do we want to show the code?
+  echo: false
+  # Do we want to show the results of the code?
+  output: true
+# Configures the jupyter kernel
+jupyter: python3
+---
+First off, Quarto uses markdown, so all the markdown you know and love (maybe hate?) will work here. 
+
+For example, how do you add a comment? 
+<!-- test test :) -->
+
+How about adding a header?
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+
+# Some other markdown basics
+## How about a list?
+
+You can make a list by preceding one or more lines of text with `-` or `*`.
+
+- Item 1
+- Item 2
+- Item 3
+
+To make a nested list, indent one or more items below another item and to make a numbered list, precede each line with a number (1. 2. 3. etc.).
+
+## How about italics and bold?
+
+*This text will be italic* and **this text will be bold**.
+
+## How about making a table?
+
+You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+## How about adding an image?
+![Put your caption here](images/nesta_logo.png){width=60%}
+
+## What happens if you think you want to add some maths?
+
+$$
+\begin{aligned}
+\frac{1}{2} \times \frac{3}{4} = \frac{3}{8}
+\end{aligned}
+$$
+
+## How about adding a link?
+
+[This is a link](https://www.nesta.org.uk/).
+
+## How about adding a footnote?
+
+This is a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+## How about putting stuff in the margins?
+
+You can put stuff in the margin on the right by using the following code chunk with three : and {.column-margin}.
+
+::: {.column-margin}
+This is some text in the margin.
+:::
+
+
+# Now onto some of the more fun stuff
+
+## Code blocks
+How do we go about adding code? This is super easy! 
+
+It allows python, R, Julia and html. I'm just going to put in python and html, but feel free to try out the others. See the [docs](https://quarto.org/docs/computations/python.html) for more info (you may need to change the kernel in the yaml header).
+
+### Python
+You can add in python code by adding the following code chunk with three ` and {python}. For example, let's say you want to create a bar chart using altair. You could do the following  
+
+```{python}
+import altair as alt
+import pandas as pd
+
+# Data generation
+x = [1, 2, 3, 4, 5]
+y = [3, 5, 1, 7, 2]
+
+# Dataframe creation
+df = pd.DataFrame({'x': x, 'y': y})
+
+# Chart creation
+chart = alt.Chart(df).mark_bar(size=50).encode(
+    x=alt.X('x', title='X'),
+    y=alt.Y('y', title='Y'),
+    color=alt.value("#0000FF"),
+    tooltip=[alt.Tooltip('x',title='X'), alt.Tooltip('y',title='Y')]
+).properties(
+    width=300,
+    height=200
+)
+
+# You need to render it to html
+alt.renderers.enable("html")
+chart
+```
+
+### HTML
+Say you look at the table above, and go yuck! I want to make it look nicer. You can do this easily by adding some html code. If you don't want to write the code yourself you could use this [html table generator](https://tablesgenerator.com/html_tables#) to create a table and then copy and paste the code into the code chunk below. 
+
+```{=html}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-v3yz{background-color:#34cdf9;border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-sp3f{background-color:#9a0000;border-color:#680100;color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-sp3f">Nicer table</th>
+    <th class="tg-sp3f">Column</th>
+    <th class="tg-sp3f">Another column</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Row</td>
+    <td class="tg-v3yz">1</td>
+    <td class="tg-0lax">2</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Another row</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-v3yz">4</td>
+  </tr>
+</tbody>
+</table>
+```
+## Hiding and showing code
+We have set the default to hide the code, but you can change this by changing the `echo` option in the yaml header to `true`. Which will show the code for all the code chunks.
+
+However, if you wanted to show the code for specific code chunks, you can do this by adding `# | echo: True` to the top of the code chunk. For example, if you wanted to show the code for the data generation and dataframe creation, but not the chart, you could do the following:
+```{python}
+# | echo: True
+# Data generation
+x = [1, 2, 3, 4, 5]
+y = [3, 5, 1, 7, 2]
+
+# Dataframe creation
+df = pd.DataFrame({'x': x, 'y': y})
+```
+
+```{python}
+# Chart creation
+chart = alt.Chart(df).mark_bar(size=50).encode(
+    x=alt.X('x', title='X'),
+    y=alt.Y('y', title='Y'),
+    color=alt.value("#0000FF"),
+    tooltip=[alt.Tooltip('x',title='X'), alt.Tooltip('y',title='Y')]
+).properties(
+    width=300,
+    height=200
+)
+
+# You need to render it to html
+alt.renderers.enable("html")
+chart
+```
+
+## Code annotations
+You can set up code annotations by using `<1>`, `<2>`, etc in the code chunk. Then create a list just below the code chunk with the annotations. For example, if you wanted to annotate the data generation and dataframe creation, you could do the following:
+```{python}
+# | echo: True
+# Data generation
+x = [1, 2, 3, 4, 5] # <1>
+y = [3, 5, 1, 7, 2] # <1>
+
+# Dataframe creation
+df = pd.DataFrame({'x': x, 'y': y}) # <2>
+```
+1. Data generation
+2. Dataframe creation
+
+There are three different annotation styles you can set; below, hover and select. You can set the style by changing `below` to one of the other options in `code-annotation-style` to the yaml header.
+
+## Callout blocks
+There are five different types of callouts; 
+`note`, `warning`, `important`, `tip`, and `caution`. You can add them by using the following code chunk with three 
+: and the type of callout you want. For example, 
+
+::: {.callout-tip}
+This is an example of a tip callout. Swap tip for note, warning, important, or caution to see the other types.
+:::
+
+# Other cool things
+
+* [Diagrams](https://quarto.org/docs/authoring/diagrams.html)
+* [Citations, bibliographies and references](https://quarto.org/docs/authoring/front-matter.html)
+* [Changing the layout throughout the different sections](https://quarto.org/docs/authoring/article-layout.html)
+
+There are a lot of other cool things you can do with quarto, especially if you are willing to host it! You can get a lot more interactivity and functionality. See the [docs](https://quarto.org/docs/guide) for more info.

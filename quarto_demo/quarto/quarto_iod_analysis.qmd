@@ -1,0 +1,112 @@
+---
+title: "IoD Geographical Analysis"
+title-block-banner: "#0000FF"
+title-block-banner-color: "#FFFFFF"
+toc: true
+toc-location: left
+number-sections: true
+format:
+  html:
+    # html-math-method: katex
+    # self-contained: true
+    # embed-resources: true
+    echo: false
+    mainfont: Sans-Serif
+    grid:
+        body-width: 1000px
+        margin-width: 175px
+        sidebar-width: 150px
+        gutter-width: 1.5em
+include-in-header:
+  - text: |
+     <link rel = "shortcut icon" href = "images/favicon.ico" />
+execute:
+  warning: false
+  echo: false
+jupyter: python3
+---
+```{python}
+# Setting the working directory to be up two levels from the notebooks folder (you shouldn't need to do this in the cookiecutter)
+import os
+os.chdir("..")
+os.chdir("..")
+```
+
+::: {.column-margin}
+<!-- How to add images (and this is how you add a comment) -->
+![](images/nesta_logo.png){width=60%}
+:::
+
+```{python}
+from quarto_demo.getters.english_la_iod_data_2019 import get_english_la_iod_2019
+from quarto_demo.getters.la_shapefiles_2019 import get_english_la_shapefiles_2019_gpd
+import pandas as pd
+import altair as alt
+from quarto_demo.pipeline.altair_plots.map_bar_chart import create_map_bar_plot
+from quarto_demo.pipeline.folium_plots.folium_iod_map import create_iod_folium_map
+
+# Loading the data
+data = get_english_la_iod_2019()
+gpd_la = get_english_la_shapefiles_2019_gpd()
+gpd_la.region_name = gpd_la.region_name.str.replace("East of England","East")
+```
+
+## Introduction
+
+This quarto report shows how open source data can be mapped geographically to look at deprivation levels across England. 
+
+::: panel-tabset
+
+## About the IoD data
+We use the English indices of deprivation (IoD) published in 2019. The IoD are statistics on the relative
+deprivation in small areas in England. Data is available at Local Authority (LA) and Lower Super Output Area (LSOA) level.
+
+The IoD dataset provides 10 indices, with the Index of Multiple Deprivation (IMD) being a combination of the indices shown in the graphic below, take from the [ONS infographic](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/833959/IoD2019_Infographic.pdf).
+
+![](images/iod_graphic.png){width=100%}
+
+## About the geographic data
+
+For the geographic boundaries, we use the the corresponding LA (2019) and LSOA (2011) boundaries used for the creation of the IoD dataset.
+
+These open datasets can be found on the  [Open Data Community](https://opendatacommunities.org/def/concept/folders/themes/societal-wellbeing) and from [Open Geography Portal](https://geoportal.statistics.gov.uk/search?collection=Dataset).
+:::
+
+## IMD by Local Authority
+
+```{python}
+# Creating the map
+iod_map = create_iod_folium_map(
+    shapefiles=gpd_la,
+    iod_data=data,
+)
+iod_map
+```
+
+::: {.column-margin}
+This map is interactive. Hover over the map to see the deprivation levels for each local authority. You can zoom in and out of the map to see the map in more detail. In the top right corner of the map, you can change the layer to see the different indices of deprivation.
+:::
+
+## London Local Authorities
+
+
+```{python}
+choro_region_la = create_map_bar_plot(
+    data, 
+    gpd_la, 
+    'London',
+    'Index of Multiple Deprivation (IMD)',
+)
+alt.renderers.enable("html")
+choro_region_la
+```
+
+::: {.column-margin}
+This map is interactive. Hover over the map to see the deprivation levels for each local authority. Click on a local authority to see the deprivation levels for each index of deprivation on the bar chart below the map.
+:::
+
+## Exploring the IoD data by Local Authority
+<!-- Adding flourish credit -->
+```{=html}
+<iframe src="images/flourish_figure/index.html" width="100%" height="800px" ></iframe>
+```
