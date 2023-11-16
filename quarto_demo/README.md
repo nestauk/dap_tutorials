@@ -3,7 +3,7 @@
 In this have-a-go session we will go through how to create a quarto document.
 
 ## 🛠️ To do *before* the have-a-go session
-Please follow these instructions to make sure you are ready to start the session.
+Please follow these instructions to make sure you are ready to start the session. To start, you will need to download the [Quarto CLI](https://quarto.org/docs/get-started/). Then follow the instructions below.
 
 ### Code set up 
 Open your terminal and complete the following instructions:
