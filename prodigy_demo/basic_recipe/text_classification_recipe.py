@@ -10,7 +10,7 @@ We are experimenting with the following aspects of the recipe:
 To run this recipe:
 
 prodigy textcat_hf tweets_annotated \
-    data_to_label_500.jsonl \
+    ./data/data_to_label_500.jsonl \
     -F text_classification_recipe.py
     
 """
