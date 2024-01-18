@@ -22,16 +22,18 @@ from prodigy.components.loaders import JSONL
 from prodigy.components.preprocess import add_tokens
 import spacy
 
-from prodigy.components.sorters import prefer_uncertain
-
 # 1. USE A DIFFERENT BASELINE MODEL
 
 # Here, we're using the spacy-huggingface integration to load
 # a sentiment analysis transformers model from HuggingFace.
 
 # Can you experiment with different models that are appropriate for the task?
-# This could mean changing the model name, or simply using a spaCy model
-# instead of huggingface.
+# For example, you might want to use a transformers model fine tuned on tweets
+# 
+# i.e. finiteautomata/bertweet-base-sentiment-analysis. What's changed with the labels 
+# when you re-run the instance?
+
+#alternatively, you can simply use a spaCy model. 
 
 # here, we're loading a blank model
 nlp = spacy.blank("en")
@@ -39,7 +41,7 @@ nlp = spacy.blank("en")
 # now we're adding the huggingface model to the pipeline
 nlp.add_pipe(
     "hf_text_pipe",
-    config={"model": "distilbert-base-uncased-finetuned-sst-2-english"},
+    config={"model": "finiteautomata/bertweet-base-sentiment-analysis"},
 )
 
 # 2. FILTER DATA TO LABEL
@@ -108,7 +110,10 @@ def make_tasks(nlp, stream: Iterator[dict]) -> Iterator[dict]:
 #here we are passing arguments like the name of the dataset to be used (aka a SQLite table)
 #and the relative path of the .jsonl dataset to be annotated
 
-#can you pass an additional parameter to the recipe? e.g. the list of labels to annotate?
+#can you pass an additional parameter to the recipe? 
+
+# i.e. You might want to pass the nlp object and allow 
+# the end user to pass the model name as a parameter instead.
 @prodigy.recipe("textcat_hf",
                 dataset=("The dataset to use", "positional", None, str),
                 source=("The source data", "positional", None, str))
@@ -129,8 +134,6 @@ def textcat_hf(dataset, source):
         "stream": stream, #this is the stream of examples to be annotated
         "view_id": "classification", #this is the view id to be used
         "config": {
-            "labels": ["POSITIVE", "NEGATIVE"],  # here we've added labels but we can do so in the recipe
-                                                #or even pass them as a parameter
             "wrap_text": True,
         },
     }
