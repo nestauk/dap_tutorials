@@ -69,7 +69,9 @@ def _filter_data(text: str, example_length: int = 5) -> str:
 
 
 def make_tasks(nlp, stream: Iterator[dict]) -> Iterator[dict]:
-    """Score stream based on model predictions.
+    """Make tasks for annotation. This includes:
+        - filtering text based on criteria;
+        - sorting examples based on model predictions.
 
     Args:
         stream (Iterator[dict]): stream
