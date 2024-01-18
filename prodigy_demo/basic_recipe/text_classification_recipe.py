@@ -102,7 +102,13 @@ def make_tasks(nlp, stream: Iterator[dict]) -> Iterator[dict]:
 
                 yield eg
 
+#Below is the recipe that we use to call the functions above and
+#render the annotation interface.
 
+#here we are passing arguments like the name of the dataset to be used (aka a SQLite table)
+#and the relative path of the .jsonl dataset to be annotated
+
+#can you pass an additional parameter to the recipe? e.g. the list of labels to annotate?
 @prodigy.recipe("textcat_hf",
                 dataset=("The dataset to use", "positional", None, str),
                 source=("The source data", "positional", None, str))
@@ -111,19 +117,20 @@ def textcat_hf(dataset, source):
     # here, we're loading our data from a jsonl file
     stream = JSONL(source)
 
-    # we're adding tokens to the stream
+    # now we're adding tokens to the stream
     stream = add_tokens(nlp, stream)
 
-    # here, we're making tasks based on our filtering criteria and
+    # Finally, we're making tasks based on our filtering criteria and
     # sorting them based on the model's uncertainty
     stream = make_tasks(nlp, stream)
 
     return {
-        "dataset": dataset,
-        "stream": stream,
-        "view_id": "classification",
+        "dataset": dataset, #this is the name of the dataset to be used
+        "stream": stream, #this is the stream of examples to be annotated
+        "view_id": "classification", #this is the view id to be used
         "config": {
-            "labels": ["POSITIVE", "NEGATIVE"],  # Customize labels as needed
+            "labels": ["POSITIVE", "NEGATIVE"],  # here we've added labels but we can do so in the recipe
+                                                #or even pass them as a parameter
             "wrap_text": True,
         },
     }
