@@ -1,0 +1,5 @@
+{"label":"POSITIVE","pattern":[{"lower":":)"}]}
+{"label":"POSITIVE","pattern":[{"lower":"thanks"}]}
+{"label":"POSITIVE","pattern":[{"lower":"great"}]}
+{"label":"NEGATIVE","pattern":[{"lower":"hate"}]}
+{"label":"NEGATIVE","pattern":[{"lower":"angry"}]}

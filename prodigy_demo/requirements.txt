@@ -1,3 +1,5 @@
+pandas
+spacy
 plac
 srsly
-pandas
+spacy-huggingface-pipelines
