@@ -6,7 +6,17 @@ db = connect()
 # This is a list of dictionaries that one can modify and export
 data = db.get_dataset(sys.argv[1])
 
-unnecessary_variables = ["text", "meta", "tokens", "options", "_input_hash", "_task_hash", "_session_id", "_view_id", "config"]
+unnecessary_variables = [
+    "text",
+    "meta",
+    "tokens",
+    "options",
+    "_input_hash",
+    "_task_hash",
+    "_session_id",
+    "_view_id",
+    "config",
+]
 # remove unecessary variables
 for s in data:
     for var in unnecessary_variables:

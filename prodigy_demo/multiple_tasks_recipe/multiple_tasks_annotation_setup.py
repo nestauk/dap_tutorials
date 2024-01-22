@@ -3,7 +3,6 @@ from prodigy.components.loaders import JSONL
 from prodigy.components.preprocess import add_tokens
 import spacy
 
-
 def sentiment_options(stream):
     # Helper function to add options to every task in a stream
     options = [
@@ -21,7 +20,6 @@ def sentiment_options(stream):
     dataset=("The dataset to use", "positional", None, str),
     source=("The source data as a JSONL file", "positional", None, str),
 )
-
 def blocks_solution(dataset, source, lang="en"):
     # Reading HTML to create checkbox
     with open("html_checkbox.html") as f:
@@ -57,13 +55,21 @@ def blocks_solution(dataset, source, lang="en"):
         "view_id": "blocks",  # use the blocks interface
         "stream": stream,
         "config": {
-            "instructions": "annotation_instructions.html", # information about the annotation setup
+            "instructions": "annotation_instructions.html",  # information about the annotation setup
             "buttons": ["accept", "reject", "ignore"],
             "labels": [
-                "Weather", "Location", "Date/time"
+                "Weather",
+                "Location",
+                "Date/time",
             ],  # the labels for the manual NER interface
             "blocks": blocks,
-            "custom_theme": {"labels": {"Weather": "#9A1BBE", "Location": "#18A48C", "Date/time": "#FDB633",},},
+            "custom_theme": {
+                "labels": {
+                    "Weather": "#9A1BBE",
+                    "Location": "#18A48C",
+                    "Date/time": "#FDB633",
+                },
+            },
             "keymap_by_label": {
                 "Weather": "w",
                 "Location": "l",
@@ -72,7 +78,7 @@ def blocks_solution(dataset, source, lang="en"):
                 "1": "n",
                 "2": "0",
             },
-            "history_length": 20, # number of annotations to appear on the side
+            "history_length": 20,  # number of annotations to appear on the side
             "javascript": javascript,
         },
     }
