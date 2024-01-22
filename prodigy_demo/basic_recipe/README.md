@@ -13,27 +13,36 @@ Let's start with a simple **text classification task** where we would like to la
 
 At its simplest, we could simply use the `textcat.manual` built-in recipe or, if we would like to train a classifier in the loop, we could use the `textcat.teach` built-in recipe.
 
-However, we might want to make some modifications to a basic recipe. This exercise explores **3 such modifications** you might want to make.
+To run the recipe:
+
+
+```
+prodigy textcat_hf tweets_annotated \
+    ./data/data_to_label_500.jsonl \
+    -F text_classification_recipe.py
+```
+### 🛫 Classifying airline tweets: Exercise 
+
+We might want to make some modifications to this basic recipe. This exercise explores **3 such modifications** you might want to make.
 
 We explore how we could:
 
 1. **Use a different baseline model**: The simplest model to use is a spaCy model, but we might want to use a different model, for instance, a huggingface model. Read [more about this here.](https://github.com/explosion/spacy-huggingface-pipelines) 
 
-2. **Filter data to label**: We might want to filter out some examples, for instance, by only labeling examples that contain a particular keyword or by length of text. 
-
-We've added a `patterns.jsonl` file that contains a list of keywords to filter with should you want to try this out. 
+2. **Filter data to label**: We might want to filter out some examples, for instance, by only labeling examples that contain a particular keyword or by length of text. We've added a `patterns.jsonl` file that contains a list of keywords to filter with should you want to try this out. 
 
 3. **Sort data to label**: We might want to label examples in a particular order, for instance, by sorting the examples by model score.
 
+As an extension, feel free to apply any additional learnings from the `llm_recipe` or aesthetics focused recipe. 
 
-Let's experiment with how we could do play around with these parameters in the `text_classification_recipe.py` 🚀
+Let's experiment with how we could do play around with these parameters in the `text_classification_recipe_QUESTIONS.py` 🚀
 
 With every change you make, run your recipe to see if/what changes:
 
 ```
 prodigy textcat_hf tweets_annotated \
     ./data/data_to_label_500.jsonl \
-    -F text_classification_recipe.py
+    -F text_classification_recipe_QUESTIONS.py
 ```
 
 **A note on ports**
