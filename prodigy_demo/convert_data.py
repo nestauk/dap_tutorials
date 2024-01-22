@@ -58,10 +58,14 @@ def make_labelled_data(
 
     # save data locally
     print('save jsonl data...')
-    processed_path = data_path / 'basic_recipe/data'
+    basic_processed_path = data_path / 'basic_recipe/data'
+    llm_processed_path = data_path / 'llm_recipe/data'
     
-    if not processed_path.exists():
-        os.makedirs(processed_path)
+    if not basic_processed_path.exists():
+        os.makedirs(basic_processed_path)
+    
+    if not llm_processed_path.exists():
+        os.makedirs(llm_processed_path)
     
     srsly.write_jsonl(
         os.path.join(
@@ -73,6 +77,15 @@ def make_labelled_data(
         converted_training_data,
     )
 
+    srsly.write_jsonl(
+        os.path.join(
+            data_path,
+            "llm_recipe",
+            "data",
+            f"data_to_label_{str(train_size)}.jsonl",
+        ),
+        converted_training_data,
+    )
 
 if __name__ == "__main__":
     plac.call(make_labelled_data)
