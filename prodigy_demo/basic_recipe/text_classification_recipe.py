@@ -1,5 +1,5 @@
 """
-Custom textcat recipe.
+Custom textcat recipe (a text classification recipe).
 
 To run this recipe:
 
