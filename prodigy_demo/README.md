@@ -32,7 +32,7 @@ Let's go into a bit more detail about Prodigy.
 
 The data can then be manually annotated by a group of annotators or enhanced with semi-automated processes such as **active learning** to speed up the annotation process.
 
-It's important to note that Prodigy isn't free or open source. Nesta's Data Science Practice purchased 5 Prodigy seats, which are transferrable within the company.
+It's important to note that Prodigy isn't free. Nesta's Data Science Practice purchased 5 Prodigy seats, which are transferrable within the company.
 
 ### 🤔 What can I used Prodigy for? Existing and custom recipes
 
