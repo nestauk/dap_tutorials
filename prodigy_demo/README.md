@@ -2,7 +2,7 @@
 
 In this have-a-go session we will explore **Prodigy**, a data annotation tool by [Explosion AI](https://explosion.ai/) (the creators of [spaCy](https://spacy.io/)). Prodigy allows you to flexibly annotate data: text, images, video and audio.
 
-In order to use Prodigy for your annotation tasks you need a license. We have 5 seats in the Data Science Practice, which are freely transferrable within the company. However, if you do need a license for a project, please join Nesta's `#prodigy` slack channel and ask for a license key.
+In order to use Prodigy for your annotation tasks you need a license. We have 5 seats in the Data Science Practice, which are freely transferrable within the company. However, if you do need a license for a project, please join Nesta's `#dsp-prodigy` slack channel and ask for a license key.
 
 ### 🛠️ Setup
 
