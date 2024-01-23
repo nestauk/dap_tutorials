@@ -73,6 +73,8 @@ PRODIGY_PORT=8081 prodigy textcat_hf tweets_annotated \
 
 After playing around with these different parameters and labelling a few examples, you should have a dataset of labelled examples. **NOTE:** Do not forget to save your annotations!
 
+You can also have a look at some data we labelled in advance, in `annotations.jsonl`.
+
 To learn about your labelled data, you can run the following commands: 
 
 ```
