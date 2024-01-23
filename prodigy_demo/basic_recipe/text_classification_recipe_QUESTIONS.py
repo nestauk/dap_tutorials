@@ -43,6 +43,8 @@ nlp.add_pipe(
     "hf_text_pipe",
     config={"model": "finiteautomata/bertweet-base-sentiment-analysis"},
 )
+#The model we're using above is this hosted transformers model on huggingface: 
+# https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis
 
 # 2. FILTER DATA TO LABEL
 
@@ -54,6 +56,14 @@ nlp.add_pipe(
 
 # As an extension, look into prodgy's pattern matcher
 # to filter based on patterns.
+
+#There is more information on the pattern matcher here:
+
+# 1. On using pattern files in Prodigy: 
+# https://support.prodi.gy/t/how-to-use-a-spacy-pattern-in-prodigy/1561
+
+# 2. On pattern matching in spaCy more generally: 
+# https://spacy.io/usage/rule-based-matching#adding-patterns-attributes
 
 
 def _filter_data(text: str, example_length: int = 5) -> str:
@@ -95,6 +105,8 @@ def make_tasks(nlp, stream: Iterator[dict]) -> Iterator[dict]:
             # how about least certain i.e. lowest scores?
 
             # NOTE: Prodigy also offer pre-built sorters like prefer_high_scores
+            
+            #The documentation for pre-built sorters can be found here: https://prodi.gy/docs/api-components#sorters 
 
             highest_score_cat = max(doc.cats, key=doc.cats.get)
 

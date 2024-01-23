@@ -131,7 +131,9 @@ What if you need multiple people to annotate data? *No problem!* The license all
 You can also customise who labels what and why. Read more on [task routing here.](https://explosion.ai/blog/prodigy-2023-updates#task-router) 
 
 ### 📚 Resources
-List of Nesta repos where Prodigy has been used:
+List of Nesta repos where Prodigy has been used (or helpful utils associated to using Prodigy):
+- This repo!:
+    If you would like to convert a .csv or pandas DataFrame to an appropriate `.jsonl` file to annotate downstream, [please refer to `convert_data.py`.](convert_data.py) 
 - PRINZ project:
     - [SIC industry mapping: the code doesn't work anymore because the langchain library has changed since, but you can get the idea structurally](https://github.com/nestauk/dap_prinz_green_jobs/tree/dev/dap_prinz_green_jobs/pipeline/green_measures/industries/prodigy);
 - Skills Extractor Library:

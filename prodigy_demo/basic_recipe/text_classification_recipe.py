@@ -24,7 +24,8 @@ nlp.add_pipe(
     "hf_text_pipe",
     config={"model": "finiteautomata/bertweet-base-sentiment-analysis"},
 )
-
+#The model we're using above is this hosted transformers model on huggingface: 
+# https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis
 
 # Here, we have a filtering function to exlude examples
 # based on some filtering criteria.

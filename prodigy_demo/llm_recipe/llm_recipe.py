@@ -62,6 +62,13 @@ def _make_chain(output_parser: langchain_core.output_parsers = output_parser,
         ("user", "{input_sentence}")
     ])
 
+    #Here, we're "chaining" together the prompt, llm and output parser. 
+    #This means that we have a single object that we can invoke that:
+    
+    # 1. Has a defined prompt;
+    # 2. Runs the llm model on the prompt and;
+    # 3. Parses the output of the llm model as a string.
+    
     chain = prompt | llm | output_parser
 
     return chain
