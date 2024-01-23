@@ -26,6 +26,8 @@ In this *have-a-go session* we will cover:
 
 ### 👶 What is Prodigy?
 
+Let's go into a bit more detail about Prodigy. 
+
 **Prodigy** is a annotation tool, typically used to create training and test data for machine learning models. There's a Python library that enables you to customise your annotation environment: the questions you ask, the annotation labels available, how the data is loaded and saved, and the behaviour of your front end application.
 
 The data can then be manually annotated by a group of annotators or enhanced with semi-automated processes such as **active learning** to speed up the annotation process.
