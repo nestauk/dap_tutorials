@@ -55,7 +55,7 @@ Each of the above tasks has a respective **recipe**: *"A Python function that ca
 
 As mentioned above, you might want to use one of the existing **recipes**.
 
-For example, if you want have your annotators manually labelling text data identifying person, organisation and product entities, you can run:
+For example, if you want to manually label text data to identify person, organisation and product entities, you can run:
 
 `prodigy ner.manual ner_news en_core_web_sm ./news_headlines.jsonl --label PERSON,ORG,PRODUCT`
 
