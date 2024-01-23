@@ -128,7 +128,7 @@ What if you need multiple people to annotate data? *No problem!* The license all
 - Send the respective EC2 instance link to your annotators: `http://YY.YYY.YYY.YYY:8080/?session=<your_name>`
     - note the `?session=<your_name>` at the end of the URL, where each annotator should replace `<your_name>` by their name, so that we're able to 
 
-It is also possible to have different annotators annotating different instances. Check this video: xxx
+You can also customise who labels what and why. Read more on [task routing here.](https://explosion.ai/blog/prodigy-2023-updates#task-router) 
 
 ### 📚 Resources
 List of Nesta repos where Prodigy has been used:
