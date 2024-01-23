@@ -113,6 +113,7 @@ You can also customise your output - we will cover this in the [multiple tasks r
 
 Pros:
 - very easy to customise the front end (allowing for multiple types of annotations at once) and the output data;
+- you can take advantage of models-in-the-loop to train models while annotating;
 
 Cons:
 - Associated cost - only free for researchers;
