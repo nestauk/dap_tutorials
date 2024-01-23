@@ -28,7 +28,7 @@ pip install -r llm_requirements.txt
 Then, ensure you have the openai API key in your environment variables. 
 
 ```
-echo OPENAI_KEY=<YOUR_API_KEY> >> .env
+echo OPENAI_KEY="YOUR_API_KEY" >> .env
 ```
 
 Now you can run the recipe to see how it works:
