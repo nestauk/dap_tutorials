@@ -32,6 +32,8 @@ In our case we have 3 classification tasks that we want to run at the same time,
 - using the `choice` (*i.e.* classification) recipe to classify the discourse as positive, negative or neutral;
 - Creating a checkbox using HTML code to identify if the user posting is being sarcastic.
 
+These workarounds depend on your usecase and are up to you to design when you're thinking about your labelling task.
+
 The NER task can be easily implemented using `ner_manual` and the free text by using `text_input` block.
 
 The code for this can be found in `multiple_tasks_annotation_setup.py` and `html_checkbox.html`.
