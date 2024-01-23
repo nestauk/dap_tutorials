@@ -13,7 +13,7 @@ Let's start with a simple **text classification task** where we would like to la
 
 At its simplest, we could simply use the `textcat.manual` built-in recipe or, if we would like to train a classifier in the loop, we could use the `textcat.teach` built-in recipe.
 
-To run the recipe:
+To run the modified recipe:
 
 
 ```
