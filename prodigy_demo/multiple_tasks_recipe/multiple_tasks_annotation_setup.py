@@ -3,8 +3,11 @@ from prodigy.components.loaders import JSONL
 from prodigy.components.preprocess import add_tokens
 import spacy
 
+
 def sentiment_options(stream):
-    # Helper function to add options to every task in a stream
+    """
+    Helper function to add options to every task in a stream
+    """
     options = [
         {"id": 1, "text": "Positive 👍"},
         {"id": -1, "text": "Negative 👎"},
@@ -21,11 +24,14 @@ def sentiment_options(stream):
     source=("The source data as a JSONL file", "positional", None, str),
 )
 def blocks_solution(dataset, source, lang="en"):
+    """
+    Our blocks solution for the multiple tasks annotation recipe.
+    """
     # Reading HTML to create checkbox
     with open("html_checkbox.html") as f:
         HTML_checkbox = f.read()
 
-    # order of annotation blocks
+    # order and type of annotation blocks
     blocks = [
         {"view_id": "ner_manual"},
         {"view_id": "choice", "text": None},
@@ -78,7 +84,7 @@ def blocks_solution(dataset, source, lang="en"):
                 "1": "n",
                 "2": "0",
             },
-            "history_length": 20,  # number of annotations to appear on the side
+            "history_length": 5,  # number of annotations to appear on the side
             "javascript": javascript,
         },
     }

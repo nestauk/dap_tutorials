@@ -12,7 +12,7 @@ document.addEventListener('prodigyupdate', v => {
 })
 
 // Implementing the keybinding for the chekbox
-// if user clicks 'c' then it checks the checkbox
+// if user clicks 's' then it checks the checkbox
 document.querySelector('#root').addEventListener('keyup', function(event) {
     if (event.keyCode === 83) {  // key code for character "s": https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
         document.getElementById("sarcasm").click();
