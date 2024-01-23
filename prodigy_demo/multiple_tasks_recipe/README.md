@@ -103,7 +103,7 @@ In our use case,  we do that by so changing the `blocks_solution()` function in 
 
 ## ⌛ Progress bar
 
-The progress bar typically has the infinite symbol, which is not very helpful. By changing the `stream` type, you get a percentage instead.
+The progress bar typically has the infinite symbol, which is not very helpful. By changing the `stream` from a generator object to a list, you get a percentage instead.
 
 In our use case, we do that by changing the the `blocks_solution()` function in `multiple_tasks_annotation_setup.py`:
 
