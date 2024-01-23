@@ -12,7 +12,7 @@ Run the following on your command line before the have-a-go session:
 2. `conda create --name prodigy_demo python=3.9`
 3. `conda activate prodigy_demo`
 4. `pip install -r requirements.txt`
-5. `pip install -r ./llm_requirements/requirements.txt` - specific requirements for the llm recipe;
+5. `pip install -r ./llm_recipe/llm_requirements.txt` - specific requirements for the llm recipe;
 6. `echo OPENAI_KEY=<YOUR_API_KEY> >> .env` where `YOUR_API_KEY` is your OpenAI API key (we will make one available for you);
 6. If you do have a Prodigy license key run `python -m pip install prodigy -f https://XXXX-XXXX-XXXX-XXXX@download.prodi.gy`. If you don't, someone in your have-a-go session group will have.
 
