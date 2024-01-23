@@ -61,3 +61,4 @@ Tag someone in a minimal PR to **make sure the code runs** before your demo.
 
 - [**KNIME Low Code**](knime_low_code/): Reproducing programmes and machine learning pipelines with KNIME, a visual programming tool.
 - [**langchain**](langchain/): An introduction to langchain, a library for building language model applications. 
+- [**prodigy**](prodigy_demo/): An introduction to prodigy, a tool for creating training data for machine learning models.

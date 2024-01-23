@@ -1,0 +1,5 @@
+pandas
+spacy
+plac
+srsly
+spacy-huggingface-pipelines
