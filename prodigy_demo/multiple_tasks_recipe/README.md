@@ -6,6 +6,28 @@ We're now going to explore having multiple annotation tasks in the same recipe a
 - Run `prodigy multiple-tasks-recipe annotated_data weather_data.jsonl  -F multiple_tasks_annotation_setup.py`
 - Open `http://localhost:8080`
 
+**A note on ports**
+
+By default, the recipe will run locally on the `:8080` port. If this port is in use you might need to either: 
+
+1. kill this port or; 
+2. change the port
+
+If you want to see how updating the recipe changes the interface. 
+
+To kill your port:
+```
+lsof -i :8080
+#COPYING THE PID
+kill -9 PID
+```
+
+To change the port, you can add the `--port` flag. For instance, to run on port `:8081`:
+
+```
+PRODIGY_PORT=8081 multiple-tasks-recipe annotated_data weather_data.jsonl -F multiple_tasks_annotation_setup.py 
+```
+
 ## 🗄️ The files
 
 - `multiple_tasks_annotation_setup.py`: the new recipe we are creating which allows for multiple tasks in the same annotation and some customisation; this is the core file of this annotation;
