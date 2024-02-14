@@ -27,14 +27,19 @@ In this *have-a-go session* we will cover:
 
 We will then go through an example and do some exercises.
 
-### 🧐 What is Metaflow?
+### 🧐 What is Metaflow? And when is it used?
 
 Metaflow is a framework for bulding and managing data pipelines. It allows to:
 - Easily define complex workflows;
 - Track all steps in the pipelie;
 - Scale to cloud services like AWS.
 
-### ❓ Why might you need Metaflow? And when is it used?
+You can use it to:
+- Process & clean data;
+- Collect data from APIs or by doing web scraping;
+- Train and test machine learning models;
+
+### ❓ Why might you need Metaflow? 
 - To have nicely defined pipelines;
 - To leverage cloud resources if you need more computing resources (using AWS batch with Metaflow is easier than setting up and EC2 instance and running a script on it);
 - When you have complex abd conflicting dependencies;
@@ -248,7 +253,7 @@ When you change `max-num-splits`, nothing changes in the way your code is ran! I
 
 #### Vertical scaling
 
-When you need more compute resources than your local machine can't provide, you can use `batch` to run specific steps on larger AWS machines. To do that, use the `@batch` decorator in the steps you want to run on the cloud. Here's an example of a script named `batch_flow_script.py`:
+When you need more compute resources than your local machine can provide, you can use `batch` to run specific steps on larger AWS machines. To do that, use the `@batch` decorator in the steps you want to run on the cloud. Here's an example of a script named `batch_flow_script.py`:
 
 ```python
 from metaflow import FlowSpec, step, batch
