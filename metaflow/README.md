@@ -42,7 +42,7 @@ You can use it to:
 ### ❓ Why might you need Metaflow? 
 - To have nicely defined pipelines;
 - To leverage cloud resources if you need more computing resources (using AWS batch with Metaflow is easier than setting up and EC2 instance and running a script on it);
-- When you have complex abd conflicting dependencies;
+- When you have complex and conflicting dependencies;
 - To resume a pipeline from where it broke after you debug your code;
 
 ### ↗️ A metaflow flow & the concept of step
@@ -293,6 +293,8 @@ if __name__ == '__main__':
 
 In the example above, the `processing_data` step will run on AWS Batch. The `@batch` decorator takes two arguments: `cpu` and `memory`, which define the number of CPUs and the amount of memory the step will use on AWS Batch. You should start with a small number of CPUs and a small amount of memory and increase them as needed.
 
+If you get a `Data Store Error` message, it might mean you need to increase your batch resources.
+
 #### 📦 Python packages to be installed
 As you can also see in the flow above, we are pip installing `flow_requirements.txt`. This is a workaround to install any dependencies that are not installed by default in the AWS Batch environment. Note that this specific line will run at every step and you can then import the necessary packages at every step (instead of importing them at the top of the script, as we usually do).
 
@@ -312,9 +314,16 @@ As default, you cannot save data to any S3 bucket you want. You can save it to t
 ### 📈 Organising your projects when using Metaflow
 As mentioned above, when using AWS batch with Metaflow, you cannot import files in locations other than the folder your working on, so all the files you need to import: configs, utils, flow requirements, etc. need to be in the same folder as your flow script.
 
-### 🔴 Common issues when using Metaflow
+If you get import errors in your steps: ensure you’ve included a requirements file in the flow directory, have included the correct file types when using the `--package-suffixes=` command, and that your requirements are actually installable/don’t have clashing dependencies.
 
 ### 🤓 Tips for using Metaflow to scrape data
+- Use `resume` to continue your flow from where it broke; this way, you don't have to request access to the website you're scraping again unecessarily, reducing:
+    - the pressure on the website's servers;
+    - the risk of being blocked by the website;
+- Use `foreach` to parallelise your scraping process into small chunks, making sure you sleep in between requests;
+- You might want to use `batch` - but there's some time associated to setting up the batch machines. Your code might not be faster when using batch, but it might still beneficial to use it if you're scraping a large number of pages;
+- Make sure each step is very well defined and that you're only doing one thing! This will make it easier to debug your code;
+- You might want to create a flow to collect the raw HTML files and another flow to extract the data from the HTML files - this way, if you decide to change how you're extracting the data, you don't have to re-scrape the pages.
 
 ### 📚 Resources
 - [Metaflow official docs](https://docs.metaflow.org/)
