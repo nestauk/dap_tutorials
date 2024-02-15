@@ -15,8 +15,8 @@ Run the following on your command line before the have-a-go session:
 ### 💡 This *have-a-go*
 
 In this *have-a-go session* we will cover:
-- What is Metaflow?
-- When is Metaflow used? Why might you need it?
+- What is Metaflow? When is Metaflow used?
+- Why might you need it?
 - A Metaflow flow & the concept of step
 - Parameters & variables in Metaflow
 - Debugging your pipeline
@@ -49,7 +49,7 @@ You can use it to:
 
 We call `flow` to a Metaflow pipeline. To create a `flow`:
 - Create a new Python script and import the Python Metaflow library;
-- Define a new flow class that inherits from the Metaflow Flow class;
+- Define a new flow class that inherits from the Metaflow `FlowSpec` class;
 - Define a steps within the flow. Each step is a function within the flow class and it's preceded by the `@step` decorator;
     - You always need a `start` and an `end` step;
 - Use `self.next()` to transition between steps.
@@ -111,7 +111,7 @@ class ParameterFlow(FlowSpec):
 
     @step
     def end(self):
-        print('alpha is %f' % self.alpha)
+        pass
 
 if __name__ == '__main__':
     ParameterFlow()
@@ -132,7 +132,7 @@ or change the `alpha` value by running the following command:
 python parameter_flow.py run --alpha 0.5
 ```
 
-You can define variables in Metafaflow at each step, using `self.my_variable`. However, unlike parameters, variables can only be accessed within up to the next step. Hence, the following code will raise an error:
+You can define variables in Metafaflow at each step, using `self.my_variable`. However, unlike parameters, variables are only accessible up to the next `foreach` step (we will learn about these in a section below!). See the following example:
 
 ```python
 from metaflow import FlowSpec, step
@@ -141,7 +141,7 @@ class VariableFlow(FlowSpec):
     @step
     def start(self):
         self.my_variable = 1
-        self.next(self.end)
+        self.next(self.second_step)
 
     @step
     def second_step(self):
@@ -150,7 +150,10 @@ class VariableFlow(FlowSpec):
     
     @step
     def end(self):
-        print("end step", self.my_variable)
+        pass
+
+if __name__ == '__main__':
+    VariableFlow()
 ```
 
 Small note: we're using `print` instead of `logging` in the examples above, as `logging` doesn't work in Metaflow.
@@ -176,19 +179,55 @@ horizontal scaling and vertical scaling.
 
 #### Horizontal scaling
 
-You do horizontal scaling by paralellising a certain step (or multiple ones) in your flow. As an example, you might need to apply the same function to a large number of files or a large number of rows in a database. You can split the files/the rows into chunks and run the same function in parallel on each chunk. In addition to breaking your data into smaller chunks, you use the `foreach` argument in `self.next` as in the example below.
+You do horizontal scaling by paralellising a certain step (or multiple ones) in your flow. As an example, you might need to apply the same function to a large number of files or a large number of rows in a database. You can split the files/the rows into chunks and run the same function in parallel on each chunk. In addition to breaking your data into smaller chunks, you use the `foreach` argument in `self.next` as in the examples below.
+
+Let's start with a toy example:
+```python
+from metaflow import FlowSpec, step
+
+class MyToyParallelFlow(FlowSpec):
+
+    @step
+    def start(self):
+        # Define your iterable (e.g., a list of numbers)
+        self.list_of_numbers = [1, 2, 3, 4, 5]
+        self.next(self.process_number, foreach='list_of_numbers') # note the foreach here
+
+    @step
+    def process_number(self):
+        # Each branch processes one element of the iterable
+        self.result = self.input * 2  # Example operation
+        self.next(self.join)
+
+    @step
+    def join(self, inputs): # note the inputs here
+        # Gather results from all branches
+        self.results = [input.result for input in inputs]
+        self.next(self.end)
+
+    @step
+    def end(self):
+        # Final step - process or output the aggregated results
+        print("Aggregated Results:", self.results)
+
+if __name__ == '__main__':
+    MyToyParallelFlow()
+```
+
+Now into a more real life example:
 
 ```python
 
 from metaflow import FlowSpec, step
 
-CHUNK_SIZE = 100
+CHUNKSIZE = 100
 S3_BUCKET = "my-s3-bucket"
 
 class MyParallelFlow(FlowSpec):
 
     @step
     def start(self):
+        # Read data from S3
         s3_path = f"s3://{S3_BUCKET}/path/to/data.parquet"
         with open(s3_path, "rb") as s3_file:
             self.data = pd.read_parquet(s3_file)
@@ -197,6 +236,7 @@ class MyParallelFlow(FlowSpec):
 
     @step
     def prepare_chunks_of_data(self):
+        # Split data into chunks of CHUNKSIZE
         self.chunks = [
             self.data[i : i + CHUNKSIZE]
             for i in range(0, len(self.data) + 1, CHUNKSIZE)
@@ -205,6 +245,7 @@ class MyParallelFlow(FlowSpec):
 
     @step
     def process_input(self):
+        # self.input is one of the chunks of data defined above
         input_data = self.input
 
         input_data["processed_id"] = input_data["id"] * 2
@@ -216,6 +257,7 @@ class MyParallelFlow(FlowSpec):
     def join(self, inputs): # note the inputs here
         import pandas as pd
 
+        # Gather results from all parallel processes
         self.data = pd.DataFrame()
         for input in inputs:
             self.data = pd.concat([self.data, input.output_data])
@@ -231,7 +273,7 @@ if __name__ == '__main__':
 
 ```
 
-Note that: the `join` step is not optional (you can call it whatever name you want though!). You always need to have a function calling both `self` and `inputs` after paralellising a step with `foreach`, even if the `join` step does not do anything.
+Note that: the `join` step is not optional (you can call it whatever name you want though!). You always need to have a function calling both `self` and `inputs` after paralellising a step with `foreach`, even if the `join` step does not do anything (i.e. it's a dummy join that only points to the next step).
 
 ##### `max-workers` and `max-num-splits`
 
@@ -297,6 +339,7 @@ If you get a `Data Store Error` message, it might mean you need to increase your
 
 #### 📦 Python packages to be installed
 As you can also see in the flow above, we are pip installing `flow_requirements.txt`. This is a workaround to install any dependencies that are not installed by default in the AWS Batch environment. Note that this specific line will run at every step and you can then import the necessary packages at every step (instead of importing them at the top of the script, as we usually do).
+In fact, anything above the `class` definition will run at every step.
 
 #### 📁 Importing configs & util files into the flow and saving metadata to S3
 All configuration and utility files you might need to import need to be in the same directory as your flow script. Additionally, make sure change `package-suffixes` when running your code to account for the different types of files being imported by your Metaflow script.
@@ -309,21 +352,23 @@ python batch_flow_script.py --package-suffixes=.txt --datastore=s3 run
 #### 🗄️ Saving data
 Note that you cannot save data locally in batch steps, so you need to save your data to S3.
 
-As default, you cannot save data to any S3 bucket you want. You can save it to the `open-jobs-lake` S3 bucket or ask the Data Engineering team to allow your outputs to be saved in a different S3 bucket.
+As default, you cannot save data to any S3 bucket you want. You can save it to the `ds-tutorials` S3 bucket or ask the Data Engineering team to allow your outputs to be saved in a different S3 bucket.
 
 ### 📈 Organising your projects when using Metaflow
 As mentioned above, when using AWS batch with Metaflow, you cannot import files in locations other than the folder your working on, so all the files you need to import: configs, utils, flow requirements, etc. need to be in the same folder as your flow script.
 
 If you get import errors in your steps: ensure you’ve included a requirements file in the flow directory, have included the correct file types when using the `--package-suffixes=` command, and that your requirements are actually installable/don’t have clashing dependencies.
 
-### 🤓 Tips for using Metaflow to scrape data
-- Use `resume` to continue your flow from where it broke; this way, you don't have to request access to the website you're scraping again unecessarily, reducing:
+### 🤓 Tips for using Metaflow (to scrape data)
+- Use `resume` to continue your flow from where it broke; this way, you don't have to request access to the website you're scraping data from again unecessarily, reducing:
     - the pressure on the website's servers;
     - the risk of being blocked by the website;
 - Use `foreach` to parallelise your scraping process into small chunks, making sure you sleep in between requests;
 - You might want to use `batch` - but there's some time associated to setting up the batch machines. Your code might not be faster when using batch, but it might still beneficial to use it if you're scraping a large number of pages;
 - Make sure each step is very well defined and that you're only doing one thing! This will make it easier to debug your code;
-- You might want to create a flow to collect the raw HTML files and another flow to extract the data from the HTML files - this way, if you decide to change how you're extracting the data, you don't have to re-scrape the pages.
+- You might want to create a flow to collect the raw HTML files and another flow to extract the data from the HTML files - this way, if you decide to change how you're extracting the data, you don't have to re-scrape the pages;
+- Create a parameter called `test` to enable you and your colleagues to run your code in test mode;
+- All the code above your class definition will be run at every step of your flow, so if you need to define a variable with the date/time the flow started, for example, the best workaround is to define it as a parameter - if you define it above, your data will change at every step; Here's [an example of how we did it for a project](https://github.com/nestauk/asf_public_discourse_web_scraping/blob/dev/asf_public_discourse_web_scraping/pipeline/mse/scrape_mse.py#L47);
 
 ### 📚 Resources
 - [Metaflow official docs](https://docs.metaflow.org/)
