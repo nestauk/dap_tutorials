@@ -3,6 +3,8 @@
 
 In this have-a-go session we will explore **Metaflow**, a framework for building and managing data pipelines.
 
+*Have-a-go session organised by Aidan Kelly and Sofia Pinto.*
+
 ### 🛠️ Setup
 
 Run the following on your command line before the have-a-go session:
