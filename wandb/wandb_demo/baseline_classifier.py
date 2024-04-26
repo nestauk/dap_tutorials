@@ -1,3 +1,7 @@
+"""
+Runs a dummy classifier that predicts survival based on the survival rate in the training data.
+Logs this as a run on wandb, including accuracy and a confusion matrix.
+"""
 from dotenv import load_dotenv
 import logging
 import numpy as np

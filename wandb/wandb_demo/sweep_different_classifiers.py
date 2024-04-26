@@ -1,3 +1,11 @@
+"""
+Runs a sweep across 3 different models and various hyperparameters to find the combination that gives the best accuracy.
+
+The number of hyperparameter combinations tried is controlled by N_RUNS.
+
+The different hyperparameter values to try is controlled by sweep_configuration.
+"""
+
 from dotenv import load_dotenv
 import pandas as pd
 import os
@@ -34,7 +42,7 @@ sweep_configuration = {
             'values': [0.01, 0.1, 1]
         },
         'max_iter': {
-            'values': [10, 100, 500]
+            'values': [10, 100, 1000]
         },
         'penalty': {
             'values': ['l2', None]

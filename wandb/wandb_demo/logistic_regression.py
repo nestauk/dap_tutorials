@@ -1,3 +1,7 @@
+"""
+Runs a logistic regression to predict survival.
+Logs this as a run on wandb, including accuracy and a confusion matrix.
+"""
 from dotenv import load_dotenv
 import logging
 import numpy as np

@@ -1,3 +1,10 @@
+"""
+Runs a sweep across logistic regression hyperparameters to find the hyperparams that give the best accuracy.
+
+The number of hyperparameter combinations tried is controlled by N_RUNS.
+
+The different hyperparameter values to try is controlled by sweep_configuration.
+"""
 from dotenv import load_dotenv
 import logging
 import numpy as np
@@ -35,7 +42,7 @@ sweep_configuration = {
             'values': [0.01, 0.1, 1]
         },
         'max_iter': {
-            'values': [10, 100, 500]
+            'values': [10, 100, 1000]
         }
     }
 }
