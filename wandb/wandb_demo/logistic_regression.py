@@ -5,11 +5,12 @@ import os
 import pandas as pd
 import numpy as np
 import pandas as pd
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 import wandb
 
 import utils
-from utils import PROJECT_DIR, load_data
+from utils import PROJECT_DIR, load_data, SEED
 
 load_dotenv()
 
@@ -28,16 +29,30 @@ if __name__ == "__main__":
         project=WANDB_PROJ,
         job_type=JOB,
         save_code=True,
-        tags=["baseline_model"],
+        tags=["logistic regression"],
     )
+    
+    log_reg_config = {'penalty': 'l2',
+                  'C': 1.0,
+                  'random_state': SEED,
+                  'solver':'lbfgs',
+                  'max_iter':100}
+    
+    model = LogisticRegression(penalty=log_reg_config['penalty'],
+                           C=log_reg_config['C'],
+                           solver=log_reg_config['solver'],
+                           max_iter=log_reg_config['max_iter'],
+                           random_state=log_reg_config['random_state'])
+    model.fit(X_train, y_train)
 
-    survival_rate = y_train.value_counts(normalize=True)[1]
+    # Predict and evaluate
+    preds = model.predict(X_test)
+    accuracy = accuracy_score(y_test, preds)
+    logging.info(f"Accuracy: {accuracy}")
 
-    y_pred_baseline = np.random.binomial(1, survival_rate, len(y_test))
+    wandb.run.summary["accuracy"] = accuracy
 
-    wandb.run.summary["accuracy"] = accuracy_score(y_test, y_pred_baseline)
-
-    cm = confusion_matrix(y_test, y_pred_baseline)
+    cm = confusion_matrix(y_test, preds)
     cm = pd.DataFrame(cm)
     logging.info(f"Confusion matrix:\n{cm}")
 

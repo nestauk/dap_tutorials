@@ -1,13 +1,38 @@
-
+import logging
+import numpy as np
+import os
 import pandas as pd
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
+from typing import Tuple
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
+os.chdir(PROJECT_DIR)
 SEED = 42
 
-def load_data(input_path = PROJECT_DIR / 'inputs/train.csv', test_size=0.2):
+np.random.seed(SEED)
+
+def load_data(input_path: Path = PROJECT_DIR / 'inputs/train.csv', test_size: float = 0.2) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
+    """
+    Load and do some basic preprocessing on the Titanic training data.
+    
+    This function reads data from a CSV file, handles missing values, encodes categorical variables,
+    and splits the data into training and testing datasets.
+
+    Args:
+        input_path (Path, optional): Path to the CSV file containing the dataset.
+                                     Defaults to PROJECT_DIR/'inputs/train.csv'.
+        test_size (float, optional): The proportion of the dataset to include in the test split.
+                                     Defaults to 0.2.
+
+    Returns:
+        Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]: A tuple containing the training
+        and testing datasets for the features and target variable.
+    """
     data = pd.read_csv(input_path)
     
     # Fill missing values
