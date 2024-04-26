@@ -10,3 +10,4 @@ __pycache__/
 .metaflow
 
 wandb/wandb/
+wandb/inputs/*.csv
