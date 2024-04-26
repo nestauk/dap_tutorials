@@ -62,4 +62,8 @@ The scripts in `wandb_demo/` show some example Weights and Biases workflows at d
     - `sweep_config`: the hyperparameters to sweep over as well as the method to use (random search, grid search, or Bayes).
     - `N_RUNS`: we are using Random Search, so once we specify how many runs we would like to execute, the sweep agent will try this many random combinations of hyperparameters from our sweep config.
 
+Once your sweep is done, navigate to the "Sweeps" view of your "Titanic" project and click on the most recent sweep. You will be able to see how different parameter combinations led to different model performance. Wandb provides handy interactive plots that show each run within a sweep as a single line, model performance on the yaxis, and different parameter settings as columns within the graph:
+
+<img src="screenshots/sweep_viz.png" width="600">
+
 4. `sweep_different_classifiers.py`: it's worth knowing that you are not restricted to trying out different hyperparameter values within one sweep - you could also try out different models. In this sweep, we compare Random Forest, SVM and Logistic Regression, and also vary some of the important hyperparameters of those models. You could extend this approach to try out, for example, different embeddings, different feature selection methods, etc. You can customise the sweep config and the `train()` function to account for anything you want to control or vary.
