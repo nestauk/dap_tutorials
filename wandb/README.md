@@ -44,6 +44,15 @@ Create an ipykernel for your conda environment:
 ```
 python -m ipykernel install --user --name=wandb_demo
 ```
+### `.env`
+
+Create a file `dap_tutorials/wandb/.env` with one variable:
+
+```
+wandb_username = "yourusernamehere"
+```
+
+Actually this is not super necessary but somehow seems nicer than writing your username in the code :) And the have-a-go code depends on it being set up this way!
 
 ### Download data
 Download the `train.csv` Titanic data from Kaggle [here](https://www.kaggle.com/competitions/titanic/data) and store it in `wandb/inputs/`.
