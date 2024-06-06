@@ -20,6 +20,10 @@ Create a new project, and let's call it Titanic because that's the data we'll be
 
 <img src="screenshots/create_new_project_2.png" width="300">
 
+### Clone this repo
+
+You've probably done this already if you've attended a have-a-go before :)
+
 ### Environment
 Create a conda environment:
 ```
@@ -37,7 +41,7 @@ conda install pip
 ```
 Install requirements:
 ```
-pip install -r requirements.txt
+pip install -r wandb/requirements.txt
 ```
 
 Create an ipykernel for your conda environment:
