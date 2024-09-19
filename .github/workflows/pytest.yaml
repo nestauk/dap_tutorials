@@ -36,7 +36,7 @@ jobs:
       - name: (ubuntu) Test with pytest
         if: runner.os != 'windows'
         run: |
-          pytest --verbose
+          pytest tests/ --verbose
 
       - name: (windows) Install dependencies
         if: runner.os == 'windows'
@@ -54,4 +54,4 @@ jobs:
         if: runner.os == 'windows'
         shell: bash
         run: |
-          pytest --verbose
+          pytest tests/ --verbose
