@@ -30,7 +30,9 @@ jobs:
           # needed to run the tests
           # pip install -r requirements.txt
           pip install pytest
-          pip install -e ."[test]"
+          # For a normal project you would also do this so you can import functions
+          # from the repo in your tests
+          # pip install -e ."[test]"
       - name: (ubuntu) Test with pytest
         if: runner.os != 'windows'
         run: |
@@ -45,7 +47,9 @@ jobs:
           # needed to run the tests
           # pip install -r requirements.txt
           pip install pytest
-          pip install -e .
+          # For a normal project you would also do this so you can import functions
+          # from the repo in your tests
+          # pip install -e .
       - name: (windows) Test with pytest
         if: runner.os == 'windows'
         shell: bash
