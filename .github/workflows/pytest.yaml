@@ -1,0 +1,53 @@
+name: Unit Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os.host }}
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10"]
+        os:
+          - name: ubuntu
+            host: ubuntu-latest
+          - name: windows
+            host: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: (ubuntu) Install dependencies
+        if: runner.os != 'windows'
+        run: |
+          python -m pip install --upgrade pip
+          # For a normal project you would install the full requirements
+          # needed to run the tests
+          # pip install -r requirements.txt
+          pip install pytest
+          pip install -e ."[test]"
+      - name: (ubuntu) Test with pytest
+        if: runner.os != 'windows'
+        run: |
+          pytest --verbose
+
+      - name: (windows) Install dependencies
+        if: runner.os == 'windows'
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          # For a normal project you would install the full requirements
+          # needed to run the tests
+          # pip install -r requirements.txt
+          pip install pytest
+          pip install -e .
+      - name: (windows) Test with pytest
+        if: runner.os == 'windows'
+        shell: bash
+        run: |
+          pytest --verbose
